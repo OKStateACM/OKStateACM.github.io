@@ -249,7 +249,7 @@ a {
 
 a.hovertext {
     position: relative;
-    width: 100%;
+    width: 90%;
     text-decoration: none !important;
     text-align: center;
   }
@@ -259,7 +259,7 @@ a.hovertext {
     left: 0;
     bottom: 0;
     padding: 0.5em 20px;
-    width: 100%;
+    width: 90%;
     background: rgba(0,0,0,0.8);
     text-decoration: none !important;
     color: #fff;
