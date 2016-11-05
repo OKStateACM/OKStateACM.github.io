@@ -177,6 +177,7 @@ a {
     margin-bottom: 0; }
 .main-content table {
   display: block;
+  border: 0px solid #ffffff;
   width: 100%;
   overflow: auto;
   word-break: normal;
