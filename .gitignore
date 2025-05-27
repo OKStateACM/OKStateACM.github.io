@@ -1,0 +1,19 @@
+#Ignore Node.js dependencies.
+#Source for this file: https://awstip.com/the-ultimate-gitignore-guide-for-django-and-next-js-projects-4631b62e5528
+# Ignore dependencies
+/node_modules/
+# Ignore Next.js build and cache files
+/.next/
+/out/
+# Ignore environment variables
+.env*
+# Ignore log files and debugging outputs
+npm-debug.log*
+yarn-debug.log*
+# Ignore local IDE settings
+.vscode/
+.idea/
+# Ignore testing coverage reports
+/coverage/
+# Ignore MacOS system files
+.DS_Store
