@@ -25,7 +25,7 @@ export default function Home() {
           </a>
           <a
             className="rounded-full py-3 px-6 border border-solid bg-black"
-            href="https://www.youtube.com/" //Link to somewhere.
+            href="/calendar" //Link to somewhere.
             target="_self" //_self opens link in the same frame. _blank opens in a new tab/window. Note that it is already _self by default. Putting this here for emphasis.
           >
             Upcoming Events
