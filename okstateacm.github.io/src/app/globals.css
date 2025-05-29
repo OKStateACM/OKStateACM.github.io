@@ -22,11 +22,11 @@
 body {
   /* background: var(--background); */
   background-image: url('/mscs.png');
-  backdrop-filter: blur(var(--blur-xs)); /* https://tailwindcss.com/docs/backdrop-filter-blur */
+  backdrop-filter: blur(var(--blur-xs)) brightness(0.9); /* https://tailwindcss.com/docs/backdrop-filter-blur */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-stroke {
-  -webkit-text-stroke: 1px #fff; /* Adjust color and width as needed */
+  -webkit-text-stroke: 1px #000000; /* Adjust color and width as needed */
 }
