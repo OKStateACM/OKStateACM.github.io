@@ -39,7 +39,43 @@ export default function Officers() {
 
       
       <main className="flex-1 overflow-y-auto p-8 ">
+        
         <div className="max-w-3xl mx-auto space-y-6">
+
+            <div className="bg-white rounded-lg shadow p-6">
+                <div className="flex items-center justify-between">
+                    {/* Left: Image and text */}
+                    <div className="flex items-center gap-4">
+                    <img
+                        src="/silhouette.png"
+                        alt="Profile"
+                        className="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                        <h2 className="text-black text-xl font-semibold">Advisor</h2>
+                        <span className="text-black">Dr. Crick (Christopher Crick)</span>
+                    </div>
+                    </div>
+                    {/* Right: LinkedIn icon */}
+                    <a
+                    href="https://www.linkedin.com/in/ricardo-mulino-2093052b6/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+
+                    {/* <Image
+                    aria-hidden
+                    src="/linkedin.png" //ADD AN EMAIL ICON HERE
+                    alt="File icon"
+                    width={80}
+                    height={0}
+                    /> */}
+                    {/* don't need to do the following. */}
+                    {/* <img src="/linkedin.png" alt="LinkedIn" className="w-20 h-5" /> */}
+                    </a>
+                </div>
+            </div>
+          
             <div className="bg-white rounded-lg shadow p-6">
                 <div className="flex items-center justify-between">
                     {/* Left: Image and text */}
