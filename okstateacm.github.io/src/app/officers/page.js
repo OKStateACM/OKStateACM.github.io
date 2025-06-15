@@ -9,7 +9,7 @@ import Image from "next/image";
 // This is called from page.js from src\app.
 export default function Officers() {
   return (
-      <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen">
           
       <header className="w-full bg-black text-white py-4 px-8 flex items-center">
         <a
