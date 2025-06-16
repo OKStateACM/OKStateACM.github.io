@@ -11,7 +11,7 @@ export default function Officers() {
   return (
     <div className="flex flex-col min-h-screen">
           
-      <header className="w-full bg-black text-white py-4 px-8 flex items-center">
+      <header className="w-full bg-black text-white py-4 px-8 gap-5 flex items-center">
         <a
           className="rounded-full py-3 px-6 border border-solid bg-black"
           href="/"
@@ -21,19 +21,26 @@ export default function Officers() {
         </a>
         <a
           className="rounded-full py-3 px-6 border border-solid bg-black"
-          href="/"
+          href="/officers"
           target="_self"
         >
-          About Us
+          Officers
         </a>
         <a
           className="rounded-full py-3 px-6 border border-solid bg-black"
           href="/calendar"
           target="_self"
         >
-          Upcoming Events
+          Events
         </a>
-        
+        <a
+          className="rounded-full py-3 px-6 border border-solid bg-black"
+          href="/"
+          target="_self"
+        >
+          About Us
+        </a>
+
         {/* <h1 className="text-2xl font-bold">ACM Officers</h1> */}
       </header>
 
