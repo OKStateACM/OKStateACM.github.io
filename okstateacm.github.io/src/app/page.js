@@ -8,7 +8,7 @@ export default function Home() {
       </header>
 
       <main className="flex items-center justify-center flex-1 flex-col gap-[32px] row-start-2 items-center ">
-        <div className="inline-block px-6 py-2 rounded-lg backdrop-blur-xl bg-gray-500/50 border border-white/50">
+        <div className="inline-block px-6 py-2 rounded-lg backdrop-blur-xl bg-gray-500/50 border border-orange-500/50">
         {/* <div className="inline-block px-6 py-2 rounded-lg backdrop-blur-xl bg-gray-500/50"> */}
           <h1 className="text-white text-stroke text-5xl text-center">
             Association <br/>for<br/>Computing Machinery
@@ -22,7 +22,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <div className="inline-block px-6 py-2 rounded-lg backdrop-blur-xl bg-gray-500/50 border border-white/50">
+        <div className="inline-block px-6 py-2 rounded-lg backdrop-blur-xl bg-gray-500/50 border border-orange-500/50">
           <h1 className="text-white text-stroke2 text-3xl text-center">Welcome to Oklahoma State University's<br/>Computer Science community!</h1>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
