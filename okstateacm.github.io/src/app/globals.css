@@ -21,7 +21,7 @@
 
 body {
   position: relative;
-  background-image: url('/mscs.png');
+  /* background-image: url('/mscs.png'); */
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(var(--blur-xs)) brightness(1);
@@ -47,4 +47,21 @@ body::before {
 
 .text-stroke2 {
   -webkit-text-stroke: 1px #000000; /* Adjust color and width as needed */
+}
+
+.custom-blur-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/mscs2.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);
+  z-index: 0;
+}
+.custom-blur-bg > * {
+  position: relative;
+  z-index: 1;
 }
