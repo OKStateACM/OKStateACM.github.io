@@ -40,66 +40,34 @@ Resources
 */
 
 import Image from "next/image";
+import Header from "./components/Header"; // This is a custom component created located in ./components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page. It is similar to creating a function that you call in your code
 
 export default function Home() { //This is a functional component. It's called Home.
   return (
     <> 
-    {/*The <> above is called a JSX element. (If this was a .html file then this would be a html element).
+    {/*
+        The <> above is called a JSX element. (If this was a .html file then this would be a html element).
         More specifically, this element is called a fragment because it is an empty tag.
-        It allows us to group things without leaving traces in the browser HTML tree.*/}
-      <header className="bg-white py-5 border-b-4 border-orange-500">
+        It allows us to group things without leaving traces in the browser HTML tree.
+    */}
+        
+      <Header/> 
+      {/* 
+          NOTE that you need import Header from "./components/Header"; at the top of this file for this too work.
 
-        {/* justify-between helps us add space between the two div elements. w-full sets to full. */}
-        <div className="flex items-center justify-between w-full text-gray-500">
+          This Header component is a custom component created located in ./components/Header.jsx. 
+          This is so we don't have to copy and paste the code for the header in every page.
+          It is similar to creting a function that you call in your code.
 
-          <div className="pl-50 text-3xl gap-15">
-            ACM@OkState
-          </div>
-
-          <div className="flex gap-15 items-center flex-col sm:flex-row pr-60">
-            <a
-              className="rounded-sm py-2 px-6  underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300"
-              href="" //Link to somewhere.
-              target="_self" //_self opens link in the same frame. _blank opens in a new tab/window. Note that it is already _self by default. Putting this here for emphasis.
-            >
-              Home
-            </a>
-
-            <a
-              className="rounded-sm py-2 px-6  underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300"
-              href="officers" //Link to somewhere.
-              target="_self" //_self opens link in the same frame. _blank opens in a new tab/window. Note that it is already _self by default. Putting this here for emphasis.
-            >
-              Officers
-            </a>
-
-            <a
-              className="rounded-sm py-2 px-6  underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300"
-              href="/calendar" //Link to somewhere.
-              target="_self" //_self opens link in the same frame. _blank opens in a new tab/window. Note that it is already _self by default. Putting this here for emphasis.
-            >
-              Events
-            </a>
-            <a
-              className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300"
-              href="" //Link to somewhere.
-              target="_self" //_self opens link in the same frame. _blank opens in a new tab/window. Note that it is already _self by default. Putting this here for emphasis.
-            >
-              About Us
-            </a>
-          </div>
-        </div>
-
-      </header>
-      
+          You can tell that it is different from the built-in header because it is capitalized.
+      */}
 
       <main className="text-black">
 
-        <>
           <div className="relative top-image-container max-h-50 py-50 bg-[url('/mscs2.png')] bg-cover bg-center">
             
             <div className="absolute inset-0 w-full h-full backdrop-blur-xs saturate-150 flex items-center justify-center">
-              <div className="placeholder-text text-white text-8xl text-stroke text-center">
+              <div className="placeholder-text text-white text-8xl text-center drop-shadow-xl drop-shadow-black">
                 Association for<br/>Computing Machinery
               </div>
             </div>
@@ -119,8 +87,6 @@ export default function Home() { //This is a functional component. It's called H
               Welcome to Oklahoma State University's Computer Science community!
             </div>
           </div>
-        
-        </>
 
 
       </main>
