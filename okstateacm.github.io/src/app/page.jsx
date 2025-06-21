@@ -45,7 +45,8 @@ import Header from "./components/Header"; // This is a custom component created 
 export default function Home() { //This is a functional component. It's called Home.
   return (
     <> 
-    {/*
+    
+    {/* 
         The <> above is called a JSX element. (If this was a .html file then this would be a html element).
         More specifically, this element is called a fragment because it is an empty tag.
         It allows us to group things without leaving traces in the browser HTML tree.
@@ -64,35 +65,50 @@ export default function Home() { //This is a functional component. It's called H
 
       <main className="text-black">
 
-          <div className="relative top-image-container max-h-50 py-50 bg-[url('/mscs2.png')] bg-cover bg-center">
-            
-            <div className="absolute inset-0 w-full h-full backdrop-blur-xs saturate-150 flex items-center justify-center">
-              <div className="placeholder-text text-white text-8xl text-center drop-shadow-xl drop-shadow-black">
+        {/* 
+          Banner/Title component:
+            - Displays a banner image with a responsive height that adjusts based on the device resolution (mobile, tablet, desktop).
+            - Uses Tailwind classes: h-56 for base height, sm:h-80 for small screens, md:h-[28rem] for medium and above.
+            - Background image is set using Tailwind
+            - Inner divs add backdrop and title
+          
+          Note:
+            - Looking into "responsive web design with Tailwind CSS" might help you understand how breakpoints and utilities work together.
+              You can read about responsive web designs outside of Tailwind CSS too.
+        */}
+          <div className="relative top-image-container h-56 sm:h-80 md:h-[28rem] bg-[url('/mscs.png')] bg-cover bg-center">
+            {/* Centers and adds backdrop */}
+            <div className="absolute inset-0 flex items-center justify-center w-full h-full backdrop-blur-xs saturate-150">
+              {/* Adds title  */}
+              <div className="px-2 text-3xl text-center text-white sm:text-5xl md:text-7xl lg:text-8xl drop-shadow-xl drop-shadow-black">
                 Association for<br/>Computing Machinery
               </div>
             </div>
-
           </div>
-          <Image
-            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-white rounded-full drop-shadow-lg drop-shadow-orange-400" 
-            src="/ACM Logo (Transparent).png" //location of logo
-            alt="Next.js logo" //alt text of file
-            width={180}
-            height={38}
-            priority
-          />
 
-          <div className="rest-of-main-content bg-white py-50">
-            <div className="placeholder-text text-black text-center">
+          {/* Responsive logo placement */}
+          <div className="relative z-10 flex justify-center -mt-12 sm:-mt-16 md:-mt-24">
+            <Image
+              className="object-contain bg-white rounded-full drop-shadow-lg drop-shadow-orange-400 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44"
+              src="/ACM at OKState Logo.png" //location of logo
+              alt="Next.js logo" //alt text of file
+              width={180}
+              height={180}
+              priority
+            />
+          </div>
+
+          {/* Responsive main content */}
+          <div className="px-4 py-8 bg-white rest-of-main-content sm:py-16 sm:px-0">
+            <div className="max-w-2xl mx-auto text-base text-center text-black sm:text-xl md:text-2xl placeholder-text">
               Welcome to Oklahoma State University's Computer Science community!
             </div>
           </div>
 
-
       </main>
 
       <footer>
-
+        {/* Add your footer content here */}
       </footer>
     </>
   );

@@ -21,30 +21,30 @@ export default function Calendar() {
   return (
     //in-line text utilizes tailwind. Please search up the following in-line commands with respect to the tailwind documentation.
     <div className="flex flex-col min-h-screen">
-      <header className="w-full bg-black text-white py-4 px-8 gap-5 flex items-center">
+      <header className="flex items-center w-full gap-5 px-8 py-4 text-white bg-black">
         <a
-          className="rounded-full py-3 px-6 border border-solid bg-black"
+          className="px-6 py-3 bg-black border border-solid rounded-full"
           href="/"
           target="_self"
         >
           Home
         </a>
         <a
-          className="rounded-full py-3 px-6 border border-solid bg-black"
+          className="px-6 py-3 bg-black border border-solid rounded-full"
           href="/officers"
           target="_self"
         >
           Officers
         </a>
         <a
-          className="rounded-full py-3 px-6 border border-solid bg-black"
+          className="px-6 py-3 bg-black border border-solid rounded-full"
           href="/calendar"
           target="_self"
         >
           Events
         </a>
         <a
-          className="rounded-full py-3 px-6 border border-solid bg-black"
+          className="px-6 py-3 bg-black border border-solid rounded-full"
           href="/"
           target="_self"
         >
@@ -54,7 +54,7 @@ export default function Calendar() {
         {/* <h1 className="text-2xl font-bold">ACM Officers</h1> */}
       </header>
 
-      <main className="flex flex-1 flex-col justify-center p-8">
+      <main className="flex flex-col justify-center flex-1 p-8">
         {/* Use an iframe to show the shared calendar. */}
         <iframe 
           className="w-full h-[70vh] rounded-md border"
@@ -64,7 +64,7 @@ export default function Calendar() {
         />
       </main>
       
-      <footer className="flex items-center justify-center w-full bg-black text-white py-4 px-8 ">
+      <footer className="flex items-center justify-center w-full px-8 py-4 text-white bg-black ">
         <div className="flex gap-10">
 
           {/* These are all hyperlinks to our verious contacts and social media. Feel free to 
@@ -72,7 +72,7 @@ export default function Calendar() {
               - Justin moua 6/15/2025
           */}
           <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white"
+            className="flex items-center gap-2 text-white hover:underline hover:underline-offset-4"
             href="mailto:acm.cs@okstate.edu"
             target="_blank"
             rel="noopener noreferrer"
@@ -88,7 +88,7 @@ export default function Calendar() {
           </a>
 
           <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white"
+            className="flex items-center gap-2 text-white hover:underline hover:underline-offset-4"
             href="https://www.instagram.com/okstate.acm/"
             target="_blank"
             rel="noopener noreferrer"
@@ -104,7 +104,7 @@ export default function Calendar() {
           </a>
 
           <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white"
+            className="flex items-center gap-2 text-white hover:underline hover:underline-offset-4"
             href="https://campuslink.okstate.edu/organization/association-for-computing-machinery"
             target="_blank"
             rel="noopener noreferrer"
@@ -121,7 +121,7 @@ export default function Calendar() {
           
           
           <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white"
+            className="flex items-center gap-2 text-white hover:underline hover:underline-offset-4"
             href="https://linktr.ee/okstate.acm"
             target="_blank"
             rel="noopener noreferrer"
