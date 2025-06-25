@@ -54,4 +54,8 @@ okstateacm.github.io
 |----📄next.config.mjs (This is a file that contains custom configuration settings for next.js.)
 </pre>
 
+# Some Useful Resources on Git
+* [Git Branching - Basic Branching and Merging][Git Branching Link]
+
 [Node.js Link]: https://nodejs.org/en
+[Git Branching Link]: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
