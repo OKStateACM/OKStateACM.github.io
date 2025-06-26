@@ -1,62 +1,35 @@
 /*
 AUTHOR(S): Justin Moua
 
-=========
-IMPORTANT
-=========
-  - 6/25/2025 (Justin Moua) Note to self: This "important" section will probably be in the readme.
-  - This specific file serves as the page for "current" officers/executive board.
-    When your term is over, please create a folder with the name of "x-y-board" where
-    x and y are the corresponding academic years of your team. Afterwards, create a "page.jsx"
-    inside of that file. Then, copy this entire code into that file.  
-
-=====
-Notes
-=====
-  -  6/21/2025 (Justin Moua) - I've coded this page in such a way that you only ever need to
-     edit the list of officers below to update the contents of the officers page.
-     Note that you WILL need to add images yourself and link to them.
-     If no image is provided or found, then a silhouette image is used as a fallback.
-     You can find the code for this in src/components/OfficerCard.jsx!
-
-  - 6/25/2025 (Justin Moua) - I've designed the officer's hyperlinks in such a way that it only
-    renders a corresponding image (such as the linked.in icon, email icon, and so on) if a link
-    is provided for them.
-
-=========
-Resources
-=========
-- Placeholder Text
+Notes:
+  -   - Placeholder Text
+Resources:
+  - Placeholder Text
 */
-import Header from "../components/Header";  // This is a custom component created located in ../components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page.
-import Footer from "../components/Footer";
-import OfficerCard from "../components/OfficerCard";
+import Header from "../../components/Header";  // This is a custom component created located in ../components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page.
+import Footer from "../../components/Footer";
+import OfficerCard from "../../components/OfficerCard";
 
-// List of officers. 
-// ==== 
-// NOTE
-// ====
-//  Images only appear if you provide a link! Very convenient right? 
-//  So don't worry about removing images from each person:) - Justin Moua
+// List of officers
 const officers = [
   { 
     officer_title: "President", 
-    officer_name: "Ricardo Mulino", 
-    officer_headshot: "",
-    officer_linkedin: "https://www.linkedin.com/in/ricardo-mulino-2093052b6/",
-    officer_email: "ricardo.mulino@okstate.edu",
-    officer_github: "",
-    officer_website: ""
+    officer_name: "Justin Moua",
+    officer_headshot: "/officers/2024-2025 exec team/justin moua.jpg",
+    officer_linkedin: "https://www.linkedin.com/in/justin-moua/",
+    officer_email: "hmuas11037@gmail.com",
+    officer_github: "https://github.com/JustinMoua",
+    officer_website: "https://JustinMoua.github.io/"
   },
   
   { 
     officer_title: "Vice President", 
-    officer_name: "Savannah Hamblin", 
+    officer_name: "Ashton Cecil",
     officer_headshot: "",
-    officer_linkedin: "https://www.linkedin.com/in/savannah-hamblin-70927b237/",
-    officer_email: "savannah.hamblin@okstate.edu",
-    officer_github: "",
-    officer_website: ""    
+    officer_linkedin: "https://www.linkedin.com/in/ashton-cecil-a3155b235/",
+    officer_email: "",
+    officer_github: "https://github.com/ashtoncec",
+    officer_website: ""
   },
   
   { 
@@ -71,17 +44,27 @@ const officers = [
   
   { 
     officer_title: "Secretary", 
-    officer_name: "Jack Weinheimer", 
+    officer_name: "Savannah Hamblin", 
     officer_headshot: "",
-    officer_linkedin: "https://www.linkedin.com/in/jack-weinheimer-96469518a/",
-    officer_email: "jaweinh@okstate.edu",
+    officer_linkedin: "https://www.linkedin.com/in/savannah-hamblin-70927b237/",
+    officer_email: "savannah.hamblin@okstate.edu",
     officer_github: "",
+    officer_website: ""    
+  },
+  
+  { 
+    officer_title: "OSU Tulsa & Online Liaison", 
+    officer_name: "Ryeleigh Avila",
+    officer_headshot: "",
+    officer_linkedin: "https://www.linkedin.com/in/avila03/",
+    officer_email: "",
+    officer_github: "https://github.com/RyeleighAvila",
     officer_website: ""
   },
   
   { 
     officer_title: "Advisor", 
-    officer_name: "Christopher Crick", 
+    officer_name: "Christopher Crick",
     officer_headshot: "",
     officer_linkedin: "",
     officer_email: "",
@@ -90,18 +73,14 @@ const officers = [
   },
   
 ];
-//==============================================
-//REPLACE ME AFTER ELECTING NEW BOARD MEMBERS!!!
-//==============================================
-
 
 // This is called from page.js from src\app.
-export default function Officers() {
+export default function Officers2024to2025() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <Header/>
 
-      <main className="flex-1">
+      <main>
         {/* =======PAGE TITLE STARTS HERE==========PAGE TITLE STARTS HERE==========PAGE TITLE STARTS HERE========== */}
         {/* (DESKTOP VIEW) Title and Former Exec Board buttons */}
         {/* Has 3 columns */}
@@ -113,7 +92,7 @@ export default function Officers() {
           <div className="text-3xl text-center text-black">
             ACM Executive Board
             <br />
-            (2025-2026)
+            (2024-2025)
           </div>
           
           {/* Apart of the third column (this is to view former executive boards) */}
@@ -150,9 +129,8 @@ export default function Officers() {
         {/* =======PAGE TITLE ENDS HERE==========PAGE TITLE ENDS HERE==========PAGE TITLE ENDS HERE========== */}
 
         {/* spacing between the page's title and the content of each officer. */}
-        <br />    
-        
-        {/* Grid of 3 columns. */}
+        <br />
+
         <div className="hidden grid-cols-3 text-black gap-y-12 md:grid exec-container">
           {officers
             .filter(officer => officer.officer_name)
@@ -188,10 +166,9 @@ export default function Officers() {
         </div>
 
       </main>
-      
-      <br/>
 
+      <br/>
       <Footer/>
-    </div>
+    </>
   );
 }

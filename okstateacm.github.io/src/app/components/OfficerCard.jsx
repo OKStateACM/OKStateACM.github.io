@@ -12,7 +12,7 @@ Resources
 */
 import Image from "next/image";
 
-export default function OfficerCard({ officer_title, officer_name, officer_headshot }) {
+export default function OfficerCard({ officer_title, officer_name, officer_headshot, officer_linkedin, officer_email, officer_github, officer_website}) {
     return (
         // for centering
         <div className="flex flex-col items-center justify-center ">
@@ -50,50 +50,77 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
             
             {/* Officer's Socials */}
             <div className="flex items-center justify-between grid-cols-4 gap-5 text-black">
-                <a
-                    className="flex items-center gap-2hover:underline hover:underline-offset-4"
-                    // href="https://linktr.ee/okstate.acm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/officer contacts/rounded/linkedin.png" 
-                        alt="Linktr.ee icon"
-                        width={50}
-                        height={50}
-                    />
-                </a>
-                
-                <a
-                    className="flex items-center gap-2hover:underline hover:underline-offset-4"
-                    // href="https://linktr.ee/okstate.acm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/officer contacts/rounded/email.png"
-                        alt="Linktr.ee icon"
-                        width={50}
-                        height={50}
-                    />
-                </a>
+                {/* LINKEDIN HYPERLINK */}
+                {officer_linkedin && (
+                    <a
+                        className="flex items-center gap-2hover:underline hover:underline-offset-4"
+                        href={officer_linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            aria-hidden
+                            src="/officer contacts/rounded/linkedin.png" 
+                            alt="LinkedIn icon"
+                            width={50}
+                            height={50}
+                        />
+                    </a>
+                )}
 
-                <a
-                    className="flex items-center gap-2hover:underline hover:underline-offset-4"
-                    // href="https://linktr.ee/okstate.acm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/officer contacts/rounded/github.png"
-                        alt="Linktr.ee icon"
-                        width={50}
-                        height={50}
-                    />
-                </a>
+                {/* EMAIL HYPERLINK */}
+                {officer_email && (
+                    <a
+                        className="flex items-center gap-2hover:underline hover:underline-offset-4"
+                        href={"mailto:" + officer_email}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            aria-hidden
+                            src="/officer contacts/rounded/email.png"
+                            alt="Email icon"
+                            width={50}
+                            height={50}
+                        />
+                    </a>
+                )}
+
+                {/* GITHUB HYPERLINK */}
+                {officer_github && (
+                    <a
+                        className="flex items-center gap-2hover:underline hover:underline-offset-4"
+                        href={officer_github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            aria-hidden
+                            src="/officer contacts/rounded/github.png"
+                            alt="GitHub icon"
+                            width={50}
+                            height={50}
+                        />
+                    </a>
+                )}
+
+                {/* WEBSITE HYPERLINK */}
+                {officer_website && (
+                    <a
+                        className="flex items-center gap-2hover:underline hover:underline-offset-4"
+                        href={officer_website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            aria-hidden
+                            src="/officer contacts/rounded/website.png"
+                            alt="Website icon"
+                            width={50}
+                            height={50}
+                        />
+                    </a>
+                )}
             </div>
         </div>
     );
