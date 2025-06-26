@@ -20,6 +20,7 @@ export default function Footer() {
       {/* Footer for mobile */}
       <footer className="bg-black border-t-4 border-orange-500 h-[250px] md:h-[500px] text-white">
           
+        {/* ACM LOGO FOR FOOTER */}
         <div className="flex items-center h-full justify-evenly">
           <Image
             className=""
@@ -30,6 +31,7 @@ export default function Footer() {
             priority
           />
 
+          {/* CAMPUS LINK HYPERLINK */}
           <div className="grid grid-row-4 gap-y-3 md:gap-y-6">
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -48,9 +50,10 @@ export default function Footer() {
               Campus Link
             </a>
 
+            {/* INSTAGRAM HYPERLINK */}
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://campuslink.okstate.edu/organization/association-for-computing-machinery"
+              href="https://www.instagram.com/okstate.acm/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -65,9 +68,10 @@ export default function Footer() {
               Instagram
             </a>
 
+            {/* LINKTR.EE HYPERLINK */}
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://campuslink.okstate.edu/organization/association-for-computing-machinery"
+              href="https://linktr.ee/okstate.acm?fbclid=PAZXh0bgNhZW0CMTEAAafi_S69r0crNEs8kHcc09PTqCjJ9BoSodFCcUp69B1sO3YOJfcf_3vWXXVUkA_aem_2JWC0f2c85g8lwTgjDKTQg"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -82,9 +86,10 @@ export default function Footer() {
               Linktr.ee
             </a>
 
+            {/* ACM EMAIL */}
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://campuslink.okstate.edu/organization/association-for-computing-machinery"
+              href="mailto:acm.cs@okstate.edu"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -101,7 +106,7 @@ export default function Footer() {
 
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://campuslink.okstate.edu/organization/association-for-computing-machinery"
+              href="https://www.linkedin.com/company/okstate-acm/"
               target="_blank"
               rel="noopener noreferrer"
             >
