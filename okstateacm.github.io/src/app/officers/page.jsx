@@ -12,6 +12,7 @@ Resources:
   - Placeholder Text
 */
 import Header from "../components/Header";  // This is a custom component created located in ../components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page.
+import Footer from "../components/Footer";
 import OfficerCard from "../components/OfficerCard";
 
 //==============================================
@@ -82,7 +83,7 @@ export default function Officers() {
         <br />    
         
         {/* Grid of 3 columns. */}
-        <div className="hidden grid-cols-3 text-black gap-y-12 md:grid exec-container">
+        <div className="hidden grid-cols-3 text-black gap-y-12 md:grid exec-container gap-y-25">
           
           {officers.map((officer) => (
             <OfficerCard
@@ -95,7 +96,7 @@ export default function Officers() {
 
         </div>
 
-        <div className="grid grid-cols-1 gap-20 text-black gap-y-12 md:hidden exec-container">
+        <div className="grid grid-cols-1 gap-20 text-black gap-y-12 md:hidden exec-container gap-y-25">
 
           {officers.map((officer) => (
             <OfficerCard
@@ -109,10 +110,10 @@ export default function Officers() {
         </div>
 
       </main>
+      
+      <br/>
 
-      <footer>
-
-      </footer>
+      <Footer/>
     </>
   );
 }

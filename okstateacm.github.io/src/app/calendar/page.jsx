@@ -1,7 +1,9 @@
 /*
 AUTHOR(S): Justin Moua
 
-Notes:
+=====
+Notes
+=====
      Justin Moua (5/28/2025) - the calendar is currently linked to a calendar I created for the 2024-2025 ACM executive team under my OSU account.
                                A new one will need to be created. Preferably, one should be made through the OSU email. However, I am not sure if
                                this would work. When I created the link for my the 2024-2025 ACM calendar, it only allowed me to show times when
@@ -10,10 +12,11 @@ Notes:
                                see a calendar and instead are met with an error. You should be able to use any calendar for this page
                                so long as you have created a shareable link.
                                In my case, shared the link for the 2024-2025 ACM calendar (particularly the HTML version)
-Resources:
+=========
+Resources
+=========
   - Placeholder Text
 */
-
 import Image from "next/image";
 
 // This is called from page.js from src\app.

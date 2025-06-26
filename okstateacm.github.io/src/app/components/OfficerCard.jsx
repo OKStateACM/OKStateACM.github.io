@@ -1,3 +1,15 @@
+/*
+AUTHOR(S): Justin Moua
+
+=====
+Notes
+=====
+
+=========
+Resources
+=========
+
+*/
 import Image from "next/image";
 
 export default function OfficerCard({ officer_title, officer_name, officer_headshot }) {
@@ -37,7 +49,7 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
             <br />
             
             {/* Officer's Socials */}
-            <div className="flex items-center justify-center grid-cols-4 gap-5 text-black">
+            <div className="flex items-center justify-between grid-cols-4 gap-5 text-black">
                 <a
                     className="flex items-center gap-2hover:underline hover:underline-offset-4"
                     // href="https://linktr.ee/okstate.acm"

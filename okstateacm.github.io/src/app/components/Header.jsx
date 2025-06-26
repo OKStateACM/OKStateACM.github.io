@@ -1,3 +1,15 @@
+/*
+AUTHOR(S): Justin Moua
+
+=====
+Notes
+=====
+
+=========
+Resources
+=========
+
+*/
 "use client";
 
 import { useState } from "react";

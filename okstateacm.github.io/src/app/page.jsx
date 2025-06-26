@@ -41,6 +41,7 @@ Resources
 
 import Image from "next/image";
 import Header from "./components/Header"; // This is a custom component created located in ./components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page. It is similar to creating a function that you call in your code
+import Footer from "./components/Footer";
 
 export default function Home() { //This is a functional component. It's called Home.
   return (
@@ -99,17 +100,35 @@ export default function Home() { //This is a functional component. It's called H
           </div>
 
           {/* Responsive main content */}
-          <div className="px-4 py-8 bg-white rest-of-main-content sm:py-16 sm:px-0">
+          <div className="px-4 py-8 h-[400px] bg-white rest-of-main-content sm:py-16 sm:px-0">
             <div className="max-w-2xl mx-auto text-base text-center text-black sm:text-xl md:text-2xl placeholder-text">
               Welcome to Oklahoma State University's Computer Science community!
             </div>
           </div>
+          
+          <div className="grid text-white bg-white place-items-center">
+            <div className="grid grid-cols-2 gap-50">
+              <div className="transition-discrete w-[700px] h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+                Placeholder Text
+              </div>
+              <div className="transition-discrete w-[700px] h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+                Placeholder Text
+              </div>
+              <div className="transition-discrete w-[700px] h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+                Placeholder Text
+              </div>
+              <div className="transition-discrete w-[700px] h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+                Placeholder Text
+              </div>
+            </div>
+          </div>
+
+
 
       </main>
 
-      <footer>
-        {/* Add your footer content here */}
-      </footer>
+      <br/>
+      <Footer/>
     </>
   );
 }
