@@ -18,7 +18,7 @@ export default function Footer() {
     <>
 
       {/* Footer for mobile */}
-      <footer className="bg-black border-t-4 border-orange-500 h-[500px] text-white">
+      <footer className="bg-black border-t-4 border-orange-500 h-[250px] md:h-[500px] text-white">
           
         <div className="flex items-center h-full justify-evenly">
           <Image
@@ -30,7 +30,7 @@ export default function Footer() {
             priority
           />
 
-          <div className="grid grid-row-4 gap-y-6">
+          <div className="grid grid-row-4 gap-y-3 md:gap-y-6">
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               href="https://campuslink.okstate.edu/organization/association-for-computing-machinery"
@@ -38,7 +38,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                className="p-1 bg-white rounded bg-opacity-70"
+                className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/footer hyperlinks/hyperlink.png"
                 alt="Campus Link"
@@ -55,7 +55,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                className="p-1 bg-white rounded bg-opacity-70"
+                className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/footer hyperlinks/instagram.png"
                 alt="Instagram"
@@ -72,7 +72,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                className="p-1 bg-white rounded bg-opacity-70"
+                className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/footer hyperlinks/linktree.png"
                 alt="Linktr.ee"
@@ -89,7 +89,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                className="p-1 bg-white rounded bg-opacity-70"
+                className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/officer contacts/rounded/email.png"
                 alt="acm.cs@okstate.edu"
@@ -106,7 +106,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                className="p-1 bg-white rounded bg-opacity-70"
+                className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/officer contacts/rounded/linkedin.png"
                 alt="Linked.In"

@@ -107,17 +107,17 @@ export default function Home() { //This is a functional component. It's called H
           </div>
           
           <div className="grid text-white bg-white place-items-center">
-            <div className="grid grid-cols-2 gap-50">
-              <div className="transition-discrete w-[700px] h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+            <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-50">
+              <div className="transition-discrete w-[250px] h-[300px] md:w-[700px] md:h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
               </div>
-              <div className="transition-discrete w-[700px] h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+              <div className="transition-discrete w-[250px] h-[300px] md:w-[700px] md:h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
               </div>
-              <div className="transition-discrete w-[700px] h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+              <div className="transition-discrete w-[250px] h-[300px] md:w-[700px] md:h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
               </div>
-              <div className="transition-discrete w-[700px] h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+              <div className="transition-discrete w-[250px] h-[300px] md:w-[700px] md:h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
               </div>
             </div>
