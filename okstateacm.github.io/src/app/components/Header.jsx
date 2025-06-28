@@ -33,8 +33,8 @@ export default function Header() {
             <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/calendar">
               Events
             </a>
-            <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/about">
-              About Us
+            <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/contact-us">
+              Contact Us
             </a>
           </div>
         </div>

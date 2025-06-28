@@ -125,7 +125,7 @@ export default function Home() { //This is a functional component. It's called H
 
           {/* Responsive main content */}
           <div className=" h-[400px] bg-white px-4 py-8 sm:py-20 sm:px-0">
-            <div className="text-center text-black text-4xl md:text-5xl placeholder-text">
+            <div className="text-4xl text-center text-black md:text-5xl placeholder-text">
               {/* 
                 Typewriter effect: https://www.npmjs.com/package/typewriter-effect?activeTab=readme
               */}
@@ -145,7 +145,7 @@ export default function Home() { //This is a functional component. It's called H
             </div>
           </div>
           
-          <div className="grid text-white bg-white place-items-center">
+          {/* <div className="grid text-white bg-white place-items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-50">
               <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
@@ -160,9 +160,73 @@ export default function Home() { //This is a functional component. It's called H
                 Placeholder Text
               </div>
             </div>
+          </div> */}
+
+          <div className="grid bg-white place-items-center">
+            <div className="grid grid-cols-1 gap-50">
+              
+              {/* flex, items-center, and justify-center are for the orange bars. */}
+              <div className="flex items-center justify-center md:h-195">
+                <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
+                  {/* grid */}
+                  <div className="grid items-center grid-cols-2">
+                    <div className="drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center">
+                      Placeholder Text (Maybe Image Here?)
+                    </div>
+                    <div className="flex items-center justify-center text-white md:h-195">
+                      Placeholder Text
+                    </div>                        
+                  </div>
+                </div>
+              </div>
+              
+              {/* flex, items-center, and justify-center are for the orange bars. */}
+              <div className="flex items-center justify-center md:h-195">
+                <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
+                  {/* grid */}
+                  <div className="grid items-center grid-cols-2">
+                    <div className="flex items-center justify-center text-white md:h-195">
+                      Placeholder Text
+                    </div>         
+                    <div className="drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center">
+                      Placeholder Text (Maybe Image Here?)
+                    </div>               
+                  </div>
+                </div>
+              </div>
+
+              {/* flex, items-center, and justify-center are for the orange bars. */}
+              <div className="flex items-center justify-center md:h-195">
+                <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
+                  {/* grid */}
+                  <div className="grid items-center grid-cols-2">
+                    <div className="drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center">
+                      Placeholder Text (Maybe Image Here?)
+                    </div>
+                    <div className="flex items-center justify-center text-white md:h-195">
+                      Placeholder Text
+                    </div>                        
+                  </div>
+                </div>
+              </div>
+          
+              {/* flex, items-center, and justify-center are for the orange bars. */}
+              <div className="flex items-center justify-center md:h-195">
+                <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
+                  {/* grid */}
+                  <div className="grid items-center grid-cols-2">
+                    <div className="flex items-center justify-center text-white md:h-195">
+                      Placeholder Text
+                    </div>         
+                    <div className="drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center">
+                      Placeholder Text (Maybe Image Here?)
+                    </div>               
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
-
-
 
       </main>
 
