@@ -9,6 +9,11 @@ Notes
 Resources
 =========
 
+React.JS
+  - Hiding and showing components using the useState Hook
+    - Link: https://dev.to/adetutu/how-to-use-usestate-hook-with-conditional-rendering-in-react-showing-and-hiding-components-3pj5
+    - Note: This is used to show and hide the "Get Involved!" button and the pop up when clicked.
+
 Typewriter Effect
   - Link: https://www.npmjs.com/package/typewriter-effect?activeTab=readme
 
@@ -65,8 +70,26 @@ import Typewriter from 'typewriter-effect';
 import Image from "next/image";
 import Header from "./components/Header"; // This is a custom component created located in ./components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page. It is similar to creating a function that you call in your code
 import Footer from "./components/Footer";
+import { useState } from "react"; //Allows us to use things like useState, useEffect, etc. in functional components.
 
 export default function Home() { //This is a functional component. It's called Home.
+
+  // This is a React hook that allows us to use state in functional components.
+  // The useState hook returns an array with two elements: the current state and a function
+  // Please read https://react.dev/reference/react/useState for more information.
+  const [socialMenuOpen, setSocialMenuOpen] = useState(false); // This is a state variable that triggers a pop up when a user clicks on the "Get Involved!" button.
+
+  function handleSocialMenuOpenToggle() {
+    if (socialMenuOpen) {
+      setSocialMenuOpen(false);
+      return;
+    }
+    else {
+      setSocialMenuOpen(true);
+      return;
+    }
+  }
+
   return (
     <> 
     
@@ -145,25 +168,47 @@ export default function Home() { //This is a functional component. It's called H
             </div>
           </div>
           
-          {/* <div className="grid text-white bg-white place-items-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-50">
-              <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
-                Placeholder Text
+        
+          {/* Below is the rest of the content for the home page. */}
+          <div className="grid bg-white place-items-center gap-50">
+            {/* 
+              Section for students getting involved and companies contact the ACM. 
+              Grid for two columns.
+            */}
+            {/* For Students Button */}
+            <div className="grid grid-cols-2 gap-200">
+              <div className="grid grid-cols-1">
+                <p className="flex justify-center">
+                  For Students
+                </p>
+                <button onClick={handleSocialMenuOpenToggle}>
+                  Get Involved!
+                </button>
+                {/* 
+                    This is called short-circuit evaluation. If socailMenuOpen is false, 
+                    then the right hand side of the AND (&&) opertator will not be evaluated. 
+                    This also utilizes the useState hook which you can read more about here:
+                    https://dev.to/adetutu/how-to-use-usestate-hook-with-conditional-rendering-in-react-showing-and-hiding-components-3pj5
+                */}
+                {socialMenuOpen &&
+                <div className="text-center">Testing</div>
+                }
               </div>
-              <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
-                Placeholder Text
+              
+              {/* For Employers Button */}
+              <div className="grid grid-cols-1">
+                <p className="flex justify-center">
+                  For Students
+                </p>
+                <button onClick={handleSocialMenuOpenToggle}>
+                  socialMenuOpen is now {socialMenuOpen ? "true" : "false"}
+                </button>
               </div>
-              <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
-                Placeholder Text
-              </div>
-              <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
-                Placeholder Text
-              </div>
+              
             </div>
-          </div> */}
-
-          <div className="grid bg-white place-items-center">
-            <div className="grid grid-cols-1 gap-50">
+            
+            {/* Below is the content that has the black bars going across the screen! */}
+            <div className="grid grid-cols-1 gap-100">
               
               {/* flex, items-center, and justify-center are for the orange bars. */}
               <div className="flex items-center justify-center md:h-195">
