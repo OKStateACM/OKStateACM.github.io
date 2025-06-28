@@ -1,3 +1,31 @@
+/* 
+AUTHOR(S): Justin Moua
+
+=====
+Notes
+=====
+  - ARE YOU LOOKING FOR tailwind.config.js? READ BELOW.
+    - This file was created with Tailwind 4.0 and higher. If you are looking at tutorials, they might mention that
+      you need to make changes to tailwind.config.js. However, Tailwind 4.0 and higher does not require you to do that.
+      You will use this file instead.
+    - Sources: 
+      - https://www.reddit.com/r/tailwindcss/comments/1i9e7k2/solution_tailwind_v4_missing_tailwindconfigjs/
+      - https://stackoverflow.com/questions/73474335/tailwind-config-js-file-not-being-generated
+
+
+  - ARE YOU RECEIVING WARNINGS IN THIS FILE?
+    - If you are using VSCode, you might receive a warning that states "Unknown at rule @tailwind" or "Unknown at rule @import".
+      This is a known issue and you can get rid of it by installing the PostCSS Language extension published by csstools.
+
+=========
+Resources
+=========
+  - 
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -5,11 +33,47 @@
   --foreground: #171717;
 }
 
+/* 
+This is needed for customized fonts. 
+source: https://youtu.be/wTuu30kyk4c?si=ObvLdrC6p2QWlkdF
+*/
+@font-face{
+  font-family: 'Manufacturing Consent'; 
+  src: url("../../public/fonts/others/ManufacturingConsent-Regular.ttf");
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url("../../public/fonts/montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url("../../public/fonts/roboto/Roboto-VariableFont_wdth,wght.ttf");
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Customized fonts */
+  --font-mfc: 'Manufacturing Consent', sans-serif;
+  --font-montserrat: 'Montserrat', --font-mfc;
+  --font-roboto: 'Roboto', --font-montserrat;
+
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
+
+  --breakpoint--sm: 640px; /*This is a default breakpoint. I added it here for reference. - Justin Moua*/
+  --breakpoint--md: 768px; /*This is a default breakpoint. I added it here for reference. - Justin Moua*/
+  --breakpoint--lg: 1024px; /*This is a default breakpoint. I added it here for reference. - Justin Moua*/
+  --breakpoint--xl: 1280px; /*This is a default breakpoint. I added it here for reference. - Justin Moua*/
+  --breakpoint--2xl: 1536px; /*This is a default breakpoint. I added it here for reference. - Justin Moua*/
+
+  /*I couldn't find a source that showed breakpoints greater than 2xl so I wanted to set the following break points.
+    Again, I couldn't find a source for these. These may very well be default breakpoints too.*/
+  --breakpoint--3xl: 1920px; 
+  --breakpoint--4xl: 2560px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +82,7 @@
     --foreground: #ededed;
   }
 }
+
 
 body {
   position: relative;
@@ -40,6 +105,9 @@ body::before {
   pointer-events: none;
 }
 
+/* 
+  These are custom classes created by Justin Moua.
+ */
 
 .text-stroke {
   -webkit-text-stroke: 1px #000000; /* Adjust color and width as needed */

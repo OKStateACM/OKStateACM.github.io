@@ -8,6 +8,25 @@ Notes
 =========
 Resources
 =========
+
+
+Information below are resources used to learn about Tailwind CSS.
+
+  -  BREAKPOINTS: What are sm:, md:, lg:, xl:, 2xl, ... in this code? 
+    - Link: https://tailwindcss.com/docs/responsive-design
+    - Note: These are called breakpoints. They are used to make your website responsive. Breakpoints 
+            When using breakpoints, "all you need to do is prefix the utility with the breakpoint name,
+            followed by the : character."
+            
+            Example:
+            - sm:bg-red-500 only applies the bg-red-500 class when the screen is at least 640px wide.
+              md:bg-blue-500 only applies the bg-blue-500 class when the screen is at least 768px wide.
+              - You can customize sm:, md:, and more in the globals.css folder. 
+                - You CAN NOT access the tailwind.config.js file in this project because this project runs on Tailwind 4.0+
+                  - More information on that here: 
+                    - https://www.reddit.com/r/tailwindcss/comments/1i9e7k2/solution_tailwind_v4_missing_tailwindconfigjs/
+                    - https://stackoverflow.com/questions/73474335/tailwind-config-js-file-not-being-generated
+
   - Headwind VSC Extension
     - Link: https://marketplace.visualstudio.com/items?itemName=heybourn.headwind
       - Last Accessed: 6/19/2025
@@ -77,6 +96,7 @@ export default function Home() { //This is a functional component. It's called H
             - Looking into "responsive web design with Tailwind CSS" might help you understand how breakpoints and utilities work together.
               You can read about responsive web designs outside of Tailwind CSS too.
         */}
+          {/* Should change the heights to rem when. */}
           <div className="relative top-image-container h-56 sm:h-80 md:h-[28rem] bg-[url('/mscs.png')] bg-cover bg-center">
             {/* Centers and adds backdrop */}
             <div className="absolute inset-0 flex items-center justify-center w-full h-full backdrop-blur-xs saturate-150">
@@ -100,24 +120,24 @@ export default function Home() { //This is a functional component. It's called H
           </div>
 
           {/* Responsive main content */}
-          <div className="px-4 py-8 h-[400px] bg-white rest-of-main-content sm:py-16 sm:px-0">
-            <div className="max-w-2xl mx-auto text-base text-center text-black sm:text-xl md:text-2xl placeholder-text">
-              Welcome to Oklahoma State University's Computer Science community!
+          <div className=" h-[400px] bg-white rest-of-main-content px-4 py-8 sm:py-32 sm:px-0">
+            <div className="mx-auto text-base text-center text-black sm:text-xl md:text-5xl placeholder-text">
+              Welcome to Oklahoma State University's <br/>Computer Science community!
             </div>
           </div>
           
           <div className="grid text-white bg-white place-items-center">
-            <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-50">
-              <div className="transition-discrete w-[250px] h-[300px] md:w-[700px] md:h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-50">
+              <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
               </div>
-              <div className="transition-discrete w-[250px] h-[300px] md:w-[700px] md:h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+              <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
               </div>
-              <div className="transition-discrete w-[250px] h-[300px] md:w-[700px] md:h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+              <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
               </div>
-              <div className="transition-discrete w-[250px] h-[300px] md:w-[700px] md:h-[500px] bg-black rounded-md border border-red-500 flex items-center justify-center">
+              <div className="transition-discrete w-[250px] h-[300px] md:w-185 md:h-195 bg-black rounded-md border border-red-500 flex items-center justify-center">
                 Placeholder Text
               </div>
             </div>
