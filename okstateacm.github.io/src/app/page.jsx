@@ -9,6 +9,8 @@ Notes
 Resources
 =========
 
+Typewriter Effect
+  - Link: https://www.npmjs.com/package/typewriter-effect?activeTab=readme
 
 Information below are resources used to learn about Tailwind CSS.
 
@@ -57,7 +59,9 @@ Information below are resources used to learn about Tailwind CSS.
       - Last Accessed: 6/19/2025
     - Note: I mainly used this to know what tailwind properties exist.
 */
+'use client'
 
+import Typewriter from 'typewriter-effect';
 import Image from "next/image";
 import Header from "./components/Header"; // This is a custom component created located in ./components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page. It is similar to creating a function that you call in your code
 import Footer from "./components/Footer";
@@ -97,11 +101,11 @@ export default function Home() { //This is a functional component. It's called H
               You can read about responsive web designs outside of Tailwind CSS too.
         */}
           {/* Should change the heights to rem when. */}
-          <div className="relative top-image-container h-56 sm:h-80 md:h-[28rem] bg-[url('/mscs.png')] bg-cover bg-center">
+          <div className="relative top-image-container h-56 sm:h-80 md:h-100 bg-[url('/mscs.png')] bg-cover bg-center">
             {/* Centers and adds backdrop */}
             <div className="absolute inset-0 flex items-center justify-center w-full h-full backdrop-blur-xs saturate-150">
               {/* Adds title  */}
-              <div className="px-2 text-3xl text-center text-white sm:text-5xl md:text-7xl lg:text-8xl drop-shadow-xl drop-shadow-black">
+              <div className="px-2 text-4xl text-center text-white sm:text-5xl md:text-7xl lg:text-8xl drop-shadow-xl drop-shadow-black">
                 Association for<br/>Computing Machinery
               </div>
             </div>
@@ -120,9 +124,24 @@ export default function Home() { //This is a functional component. It's called H
           </div>
 
           {/* Responsive main content */}
-          <div className=" h-[400px] bg-white rest-of-main-content px-4 py-8 sm:py-32 sm:px-0">
-            <div className="mx-auto text-base text-center text-black sm:text-xl md:text-5xl placeholder-text">
-              Welcome to Oklahoma State University's <br/>Computer Science community!
+          <div className=" h-[400px] bg-white px-4 py-8 sm:py-20 sm:px-0">
+            <div className="text-center text-black text-4xl md:text-5xl placeholder-text">
+              {/* 
+                Typewriter effect: https://www.npmjs.com/package/typewriter-effect?activeTab=readme
+              */}
+              <Typewriter
+                options={{
+                  strings: [
+                    "Welcome to Oklahoma State University's\n<br/>Computer Science community!",
+                    "Go Pokes!"
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 35, // Lower num = faster. Higher num = slower.
+                  deleteSpeed: 20, // Lower num = faster. Higher num = slower.
+                  pauseFor: 3000,
+                }}
+              />
             </div>
           </div>
           
