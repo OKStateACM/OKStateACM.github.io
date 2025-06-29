@@ -198,7 +198,7 @@ export default function Home() { //This is a functional component. It's called H
                 <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
                   {/* grid */}
                   
-                  <div className="grid grid-cols-2 gap-50">
+                  <div className="grid grid-cols-2 gap-25">
                     
                     {/* Feel free to replace this div with the commented
                       <Image component below if you want to use square 
@@ -232,18 +232,16 @@ export default function Home() { //This is a functional component. It's called H
                       <i className="flex justify-center font-bold text-white py-25 text-8xl">
                         Grow
                       </i>
-                      <p className="px-10 text-white">
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text 
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <p className="px-10 text-lg text-white">
+                      Whether you are an undergraduate, graduate, faculty, or a professional,
+                      <br />
+                      the ACM is here to help you grow. Coding experience is not a requirement
+                      <br />
+                      to join and we highly encourage you to join us! Participate in workshops,
+                      <br />
+                      competitions, company networking events, projects, game nights, 
+                      <br />
+                      and more!
                       </p>
                     </div>
                       
@@ -256,15 +254,20 @@ export default function Home() { //This is a functional component. It's called H
               <div className="flex items-center justify-center md:h-195">
                 <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
                   {/* grid */}
-                  <div className="grid grid-cols-[1fr_auto] gap-0 items-center">
-                    <div>
-                      <i className="flex font-bold text-white justify-center-safe py-25 text-8xl">
+                  <div className="grid grid-cols-[1fr_auto]">
+                    {/* Positions the "Connect" a title lower. */}
+                    <div className="py-25">
+                      <i className="flex font-bold text-white justify-center-safe text-8xl">
                         Connect
                       </i>
-                      <p className="px-10 text-white">
-                        Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text 
-                        <br/>
-                        Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <p className="px-10 text-white py-25 ">
+                        Come surround yourself with like-minded individuals who share your
+                      <br />
+                      passion for computer science and technology. Discover new friendships, 
+                      <br />
+                      collaborations, and opportunities to connect with fellow students,
+                      <br />
+                      faculty, and industry professionals.
                         {/* ... */}
                       </p>
                     </div>
@@ -285,10 +288,10 @@ export default function Home() { //This is a functional component. It's called H
               <div className="flex items-center justify-center md:h-195">
                 <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
                   {/* grid */}
-                  <div className="grid grid-cols-2 gap-50">
+                  <div className="grid grid-cols-2 gap-25">
                     <Image 
-                      className="object-cover object-center drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center"
-                      src="/images/homepage-images/acm-impact.jpg"
+                      className="object-cover drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center"
+                      src="/images/homepage-images/acm-impact-2.jpg"
                       alt="Next.js logo" //alt text of file
                       width={500}
                       height={500}
@@ -300,17 +303,13 @@ export default function Home() { //This is a functional component. It's called H
                         Impact
                       </i>
                       <p className="px-10 text-white">
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text 
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                        Join us to make an difference in the world of Computer Science. Whether it's
+                        <br/>
+                        through community outreach, mentorship, programs, organizing competitions,
+                        <br/>
+                        contributing to projects, or simply sharing your knowledge, you'll make a
+                        <br/>
+                        positive impact on the community and beyond.
                       </p>
                     </div>
                       
@@ -323,23 +322,21 @@ export default function Home() { //This is a functional component. It's called H
               <div className="flex items-center justify-center md:h-195">
                 <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
                   {/* grid */}
-                  <div className="grid grid-cols-2 gap-50">
+                  <div className="grid grid-cols-2 gap-25">
                     <div >
                       <i className="flex justify-center font-bold text-white py-25 text-8xl">
                         Have Fun
                       </i>
                       <p className="px-10 text-white">
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text 
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
-                      <br/>
-                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                        The ACM is not just about work; it's about having fun too! Join us for game 
+                        <br/>
+                        nights, social events, team-building activities, food, and beverages. Meet
+                        <br/>
+                        new friends, relax after a long day of classes, or study together before
+                        <br/>
+                        that big exam! ACM is a place where you can enjoy your time while
+                        <br/>
+                        pursuing your passion for computer science.
                       </p>
                     </div>
                     <Image 

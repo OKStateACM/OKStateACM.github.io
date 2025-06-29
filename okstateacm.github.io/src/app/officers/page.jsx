@@ -110,7 +110,7 @@ export default function Officers() {
           <div></div>
           
           {/* Apart of the middle column (this is for the title) */}
-          <div className="text-3xl text-center text-black">
+          <div className="text-5xl text-center text-black">
             ACM Executive Board
             <br />
             (2025-2026)

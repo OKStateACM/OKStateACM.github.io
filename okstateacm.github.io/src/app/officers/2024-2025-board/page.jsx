@@ -89,7 +89,7 @@ export default function Officers2024to2025() {
           <div></div>
           
           {/* Apart of the middle column (this is for the title) */}
-          <div className="text-3xl text-center text-black">
+          <div className="text-5xl text-center text-black">
             ACM Executive Board
             <br />
             (2024-2025)

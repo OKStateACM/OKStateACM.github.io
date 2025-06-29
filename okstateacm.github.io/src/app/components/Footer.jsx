@@ -26,8 +26,8 @@ export default function Footer() {
             className=""
             src="/ACM at OKState Logo.png" //location of logo
             alt="Next.js logo" //alt text of file
-            width={180}
-            height={180}
+            width={400}
+            height={400}
             priority
           />
 

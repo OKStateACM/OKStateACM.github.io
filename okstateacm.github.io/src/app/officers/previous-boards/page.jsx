@@ -16,7 +16,7 @@ export default function PreviousBoards() {
 
       <main className="flex items-center justify-center flex-1">
         <div className="flex flex-col items-center">
-          <div className="mb-6 text-3xl font-bold text-center text-black">
+          <div className="mb-6 text-5xl font-bold text-center text-black">
             Former Executive Boards
           </div>
           <div className="grid grid-rows-4 text-black gap-y-3 md:gap-y-6">

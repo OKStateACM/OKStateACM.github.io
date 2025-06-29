@@ -26,7 +26,7 @@ export default function Header() {
             ACM@OkState
           </div>
           
-          <div className="flex flex-col items-center gap-15 sm:flex-row pr-60">
+          <div className="flex flex-col items-center gap-10 sm:flex-row pr-40">
             <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
               Home
             </a>
@@ -36,8 +36,14 @@ export default function Header() {
             <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/calendar">
               Events
             </a>
-            <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/contact-us">
-              Contact Us
+            <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/about">
+              About
+            </a>
+            <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/faq">
+              FAQ
+            </a>
+            <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/hackathons">
+              Hackathons
             </a>
           </div>
           
