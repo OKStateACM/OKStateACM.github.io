@@ -70,25 +70,12 @@ import Typewriter from 'typewriter-effect';
 import Image from "next/image";
 import Header from "./components/Header"; // This is a custom component created located in ./components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page. It is similar to creating a function that you call in your code
 import Footer from "./components/Footer";
-import { useState } from "react"; //Allows us to use things like useState, useEffect, etc. in functional components.
 
 export default function Home() { //This is a functional component. It's called Home.
 
   // This is a React hook that allows us to use state in functional components.
   // The useState hook returns an array with two elements: the current state and a function
   // Please read https://react.dev/reference/react/useState for more information.
-  const [socialMenuOpen, setSocialMenuOpen] = useState(false); // This is a state variable that triggers a pop up when a user clicks on the "Get Involved!" button.
-
-  function handleSocialMenuOpenToggle() {
-    if (socialMenuOpen) {
-      setSocialMenuOpen(false);
-      return;
-    }
-    else {
-      setSocialMenuOpen(true);
-      return;
-    }
-  }
 
   return (
     <> 
@@ -123,7 +110,6 @@ export default function Home() { //This is a functional component. It's called H
             - Looking into "responsive web design with Tailwind CSS" might help you understand how breakpoints and utilities work together.
               You can read about responsive web designs outside of Tailwind CSS too.
         */}
-          {/* Should change the heights to rem when. */}
           <div className="relative top-image-container h-56 sm:h-80 md:h-100 bg-[url('/mscs.png')] bg-cover bg-center">
             {/* Centers and adds backdrop */}
             <div className="absolute inset-0 flex items-center justify-center w-full h-full backdrop-blur-xs saturate-150">
@@ -146,7 +132,6 @@ export default function Home() { //This is a functional component. It's called H
             />
           </div>
 
-          {/* Responsive main content */}
           <div className=" h-[400px] bg-white px-4 py-8 sm:py-20 sm:px-0">
             <div className="text-4xl text-center text-black md:text-5xl placeholder-text">
               {/* 
@@ -166,47 +151,45 @@ export default function Home() { //This is a functional component. It's called H
                 }}
               />
             </div>
-          </div>
-          
+        </div>
         
           {/* Below is the rest of the content for the home page. */}
           <div className="grid bg-white place-items-center gap-50">
+
             {/* 
               Section for students getting involved and companies contact the ACM. 
               Grid for two columns.
             */}
-            {/* For Students Button */}
-            <div className="grid grid-cols-2 gap-200">
-              <div className="grid grid-cols-1">
+            <div className="grid grid-cols-2 text-4xl gap-100 ">
+              {/* For Students Button */}
+              <div className="grid grid-cols-1 gap-5">
                 <p className="flex justify-center">
                   For Students
                 </p>
-                <button onClick={handleSocialMenuOpenToggle}>
+                <a 
+                  className="flex justify-center text-white border border-2 border-black rounded-xl bg-blue-500/80 hover:bg-sky-700" 
+                  href="https://linktr.ee/okstate.acm"
+                  target="_blank" //This is here to open the link in a new tab.
+                >
                   Get Involved!
-                </button>
-                {/* 
-                    This is called short-circuit evaluation. If socailMenuOpen is false, 
-                    then the right hand side of the AND (&&) opertator will not be evaluated. 
-                    This also utilizes the useState hook which you can read more about here:
-                    https://dev.to/adetutu/how-to-use-usestate-hook-with-conditional-rendering-in-react-showing-and-hiding-components-3pj5
-                */}
-                {socialMenuOpen &&
-                <div className="text-center">Testing</div>
-                }
+                </a>
               </div>
               
+
               {/* For Employers Button */}
-              <div className="grid grid-cols-1">
+              <div className="grid grid-cols-1 gap-5">
                 <p className="flex justify-center">
-                  For Students
+                  For Employers
                 </p>
-                <button onClick={handleSocialMenuOpenToggle}>
-                  socialMenuOpen is now {socialMenuOpen ? "true" : "false"}
-                </button>
+                <a 
+                  className="flex justify-center text-white border border-2 border-black rounded-xl bg-blue-500/80 hover:bg-sky-700" 
+                  href="mailto:acm.cs@okstate.edu"
+                  >
+                  Contact Us!
+                </a>
               </div>
-              
             </div>
-            
+
             {/* Below is the content that has the black bars going across the screen! */}
             <div className="grid grid-cols-1 gap-100">
               
@@ -214,13 +197,57 @@ export default function Home() { //This is a functional component. It's called H
               <div className="flex items-center justify-center md:h-195">
                 <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
                   {/* grid */}
-                  <div className="grid items-center grid-cols-2">
-                    <div className="drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center">
-                      Placeholder Text (Maybe Image Here?)
+                  
+                  <div className="grid grid-cols-2 gap-50">
+                    
+                    {/* Feel free to replace this div with the commented
+                      <Image component below if you want to use square 
+                      shape instead of a diamond.
+                    */}
+                    {/* DIAMOND SHAPE FRAME */}
+                    <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-150 md:h-150">
+                        {/* rotates the shape and adds orange glow */}
+                        <div className="absolute inset-0 rotate-45 rounded-[20%] overflow-hidden border border-orange-500 border-4 bg-white">
+                            {/* Rotates image (since the shape -45deg was rotated 45deg) and zooms in on image*/}
+                            <Image
+                                src={"/images/homepage-images/iso-republic-colorful-programming-code.jpg"}
+                                alt="Next.js logo"
+                                width={500}
+                                height={500}
+                                priority
+                                className="object-cover w-full h-full scale-125 -rotate-45 bg-white"
+                            />
+                        </div>
                     </div>
-                    <div className="flex items-center justify-center text-white md:h-195">
-                      Placeholder Text
-                    </div>                        
+                    {/* <Image 
+                      className="object-cover object-center drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center"
+                      src="/images/homepage-images/iso-republic-colorful-programming-code.jpg"
+                      alt="Next.js logo" //alt text of file
+                      width={500}
+                      height={500}
+                      priority
+                    /> */}
+                    {/* <div className="grid items-center grid-cols-1 gap-5"> */}
+                    <div >
+                      <i className="flex justify-center font-bold text-white py-25 text-8xl">
+                        Grow
+                      </i>
+                      <p className="px-10 text-white">
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text 
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      </p>
+                    </div>
+                      
+                    {/* </div> */}
                   </div>
                 </div>
               </div>
@@ -229,14 +256,28 @@ export default function Home() { //This is a functional component. It's called H
               <div className="flex items-center justify-center md:h-195">
                 <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
                   {/* grid */}
-                  <div className="grid items-center grid-cols-2">
-                    <div className="flex items-center justify-center text-white md:h-195">
-                      Placeholder Text
-                    </div>         
-                    <div className="drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center">
-                      Placeholder Text (Maybe Image Here?)
-                    </div>               
+                  <div className="grid grid-cols-[1fr_auto] gap-0 items-center">
+                    <div>
+                      <i className="flex font-bold text-white justify-center-safe py-25 text-8xl">
+                        Connect
+                      </i>
+                      <p className="px-10 text-white">
+                        Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text 
+                        <br/>
+                        Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                        {/* ... */}
+                      </p>
+                    </div>
+                    <Image 
+                      className="object-cover object-center drop-shadow-xl drop-shadow-black w-[250px] h-[300px] md:w-250 md:h-146 bg-white rounded-4xl border-4 border-orange-500"
+                      src="/images/homepage-images/acm-nasa-suits-fall-2023.jpg"
+                      alt="Next.js logo"
+                      width={500}
+                      height={500}
+                      priority
+                    />
                   </div>
+
                 </div>
               </div>
 
@@ -244,13 +285,36 @@ export default function Home() { //This is a functional component. It's called H
               <div className="flex items-center justify-center md:h-195">
                 <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
                   {/* grid */}
-                  <div className="grid items-center grid-cols-2">
-                    <div className="drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center">
-                      Placeholder Text (Maybe Image Here?)
+                  <div className="grid grid-cols-2 gap-50">
+                    <Image 
+                      className="object-cover object-center drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center"
+                      src="/images/homepage-images/acm-impact.jpg"
+                      alt="Next.js logo" //alt text of file
+                      width={500}
+                      height={500}
+                      priority
+                    />
+                    {/* <div className="grid items-center grid-cols-1 gap-5"> */}
+                    <div >
+                      <i className="flex justify-center font-bold text-white py-25 text-8xl">
+                        Impact
+                      </i>
+                      <p className="px-10 text-white">
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text 
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      </p>
                     </div>
-                    <div className="flex items-center justify-center text-white md:h-195">
-                      Placeholder Text
-                    </div>                        
+                      
+                    {/* </div> */}
                   </div>
                 </div>
               </div>
@@ -259,13 +323,36 @@ export default function Home() { //This is a functional component. It's called H
               <div className="flex items-center justify-center md:h-195">
                 <div className="shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] flex items-center justify-center w-screen bg-black border-t-4 border-b-4 border-orange-500 h-120">
                   {/* grid */}
-                  <div className="grid items-center grid-cols-2">
-                    <div className="flex items-center justify-center text-white md:h-195">
-                      Placeholder Text
-                    </div>         
-                    <div className="drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center">
-                      Placeholder Text (Maybe Image Here?)
-                    </div>               
+                  <div className="grid grid-cols-2 gap-50">
+                    <div >
+                      <i className="flex justify-center font-bold text-white py-25 text-8xl">
+                        Have Fun
+                      </i>
+                      <p className="px-10 text-white">
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text 
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      <br/>
+                      Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text
+                      </p>
+                    </div>
+                    <Image 
+                      className="object-cover rounded-full object-center drop-shadow-xl drop-shadow-black text-black transition-discrete w-[250px] h-[300px] md:w-165 md:h-165 bg-white rounded-4xl border-4 border-orange-500 flex items-center justify-center"
+                      src="/images/homepage-images/acm-have-fun-2.jpg"
+                      alt="Next.js logo" //alt text of file
+                      width={500}
+                      height={500}
+                      priority
+                    />
+                    {/* <div className="grid items-center grid-cols-1 gap-5"> */}
+                      
+                    {/* </div> */}
                   </div>
                 </div>
               </div>

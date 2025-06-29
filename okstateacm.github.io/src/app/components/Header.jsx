@@ -22,7 +22,10 @@ export default function Header() {
       {/*Header for desktops. This is hidden on smaller screens. Flex occurs on md and greater.*/}
       <header className="hidden py-5 bg-white border-b-4 border-orange-500 md:block">
         <div className="flex items-center justify-between w-full text-gray-500">
-          <div className="text-3xl pl-50 gap-15">ACM@OkState</div>
+          <div className="text-3xl pl-50 gap-15">
+            ACM@OkState
+          </div>
+          
           <div className="flex flex-col items-center gap-15 sm:flex-row pr-60">
             <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
               Home
@@ -37,6 +40,7 @@ export default function Header() {
               Contact Us
             </a>
           </div>
+          
         </div>
       </header>
 
