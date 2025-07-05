@@ -1,6 +1,10 @@
 # 👋 Welcome
 Welcome! This is the GitHub repository for Oklahoma State University's (OSU) Association for Computing Machinery (ACM) chapter's website.
 
+<br/>
+<br/>
+<br/>
+
 # 💼 Project Overview
 
 ## ❓ What is this project?
@@ -10,11 +14,15 @@ This is a web-application that contains information about OSU's ACM chapter. It 
 This website is intended for prospective and current OSU students, alumni, and employers looking for information about OSU’s ACM chapter.
 
 
+<br/>
+<br/>
+<br/>
+
 # 🔨 Setup Instructions
 At the time of writing, the setup instruction are targeted towards Windows 10, Windows 11, and the Ubuntu-based Linux distributons.
 
+
 ## 📦 Pre-Requisites
- 
 ### Git and GitHub  
 This project will require you to use Git and GitHub. If you do not have Git installed: 
 1. Install Git for from the official [Git website][Git Download Link].
@@ -28,12 +36,16 @@ You will need to connect Git to your GitHub account in order to utilize Git. Thi
 This project runs on **Node.js version 18.18** or later. Make sure you have the correct version installed before proceeding. To install Node.js 18.18 or a newer version:
 1. Go to the official [Node.js website][Node.js Download Link] and download Node.js 18.18 or later.
 
+<br/>
+
 ## ⚙️ Configuring Project
 To get the project on your computer and set it up:
 1. Clone this repository. You can find instructions on how to clone a repository from the [GitHub documentation][How to clone a repo]. 
 2. Open your terminal.
 3. Navigate to the ```OKStateACM.github.io``` directory. Do this by typing ```cd ./OKStateACM.github.io/``` in your terminal followed by pressing the ```enter``` key.
 4. Type ```npm install nextjs``` into the terminal.
+
+<br/>
 
 ## 💻 Running the Project (Locally)
 To run your project and see changes you make: 
@@ -42,6 +54,7 @@ To run your project and see changes you make:
 3. Start the development server by typing ```npm run dev``` followed by pressing the ```enter``` key.
 4.  After running the command, you’ll see a local and network URL (e.g., ```http://localhost:3000```). Open one of them in your browser to view the site.
 
+<br/>
 
 ## 📱 Running on a Mobile Device (Optional)
 To view the site from your mobile device:
@@ -58,6 +71,9 @@ To view the site from your mobile device:
                 123.456.789.012:3000
 ⚠️ Note: If you are having difficulties with connecting, you may need to adjust some firewall and port settings.
     
+<br/>
+<br/>
+<br/>
 
 # 📁 Key Files & Directories (Work in Progress)
 Below are a list of files and explanations of what they are.
@@ -86,6 +102,10 @@ OKStateACM.github.io
 |
 |----📄next.config.mjs (This is a file that contains custom configuration settings for next.js.)
 </pre>
+
+<br/>
+<br/>
+<br/>
 
 # 📚 Some Useful Resources on Git
 * [Git Branching - Basic Branching and Merging][Git Branching Link]
