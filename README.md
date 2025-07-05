@@ -1,36 +1,69 @@
-Welcome! This is the GitHub repository for Oklahoma State University's Association for Computing Machinery chapter's website. 
-</br>
-This was last edited by Justin Moua on 6/21/2025.
+# 👋 Welcome
+Welcome! This is the GitHub repository for Oklahoma State University's (OSU) Association for Computing Machinery (ACM) chapter's website.
 
-# Pre-Requisites (Work in Progress)
-This project uses the Next.js React framework. You will want to ensure you have [Node.js 18.18][Node.js Link] or later.
+# 💼 Project Overview
 
-Once you have cloned the repository:
-1. Open up your device's terminal.
-2. Go to the \okstateacm.github.io folder within this repository.
-3. Type ```npm install next``` into the terminal.
+## ❓ What is this project?
+This is a web-application that contains information about OSU's ACM chapter. It uses the Next.js React framework.
+
+## ❓ Who is this for?
+This website is intended for prospective and current OSU students, alumni, and employers looking for information about OSU’s ACM chapter.
 
 
-# How do I run this project?
-1. Open up your device's terminal.
-2. Go to the \okstateacm.github.io folder within this repository.
-3. Type ```npm run dev``` into the terminal. You should see a localhost and network http link. Click on one of them, copy and paste or type one of them into a browser.
+# 🔨 Setup Instructions
+At the time of writing, the setup instruction are targeted towards Windows 10, Windows 11, and the Ubuntu-based Linux distributons.
 
-# How do I run this on my mobile device?
-1. Follow the steps for "How do I run this project?" located above.
-2. Ensure the device the project is running on AND your mobile device are conencted onto the same network.
-3. Open a webbrowser on your mobile device.
-4. In the webbrowser, type in the the IP address followed by a colon and the port number you see after running the ```npm run dev``` command.
+## 📦 Pre-Requisites
+ 
+### Git and GitHub  
+This project will require you to use Git and GitHub. If you do not have Git installed: 
+1. Install Git for from the official [Git website][Git Download Link].
+
+#### Connecting Git to GitHub  
+You will need to connect Git to your GitHub account in order to utilize Git. This is done by setting your username and email in git. Your username would be the username of your GitHub account. Your email would be the email associated with your GitHub account. To set your git username and email: 
+1. Go to the [GitHub documentation][Connecting Git to GitHub] to set your git username.
+2. Go to the [GitHub documentation][Connecting Email to GitHub] to set your email.
+
+### Node.js
+This project runs on **Node.js version 18.18** or later. Make sure you have the correct version installed before proceeding. To install Node.js 18.18 or a newer version:
+1. Go to the official [Node.js website][Node.js Download Link] and download Node.js 18.18 or later.
+
+## ⚙️ Configuring Project
+To get the project on your computer and set it up:
+1. Clone this repository. You can find instructions on how to clone a repository from the [GitHub documentation][How to clone a repo]. 
+2. Open your terminal.
+3. Navigate to the ```OKStateACM.github.io``` directory. Do this by typing ```cd ./OKStateACM.github.io/``` in your terminal followed by pressing the ```enter``` key.
+4. Type ```npm install nextjs``` into the terminal.
+
+## 💻 Running the Project (Locally)
+To run your project and see changes you make: 
+1. Open your terminal.
+2. Navigate to the ```OKStateACM.github.io``` directory. Do this by typing ```cd ./OKStateACM.github.io/``` in your terminal followed by pressing the ```enter``` key.
+3. Start the development server by typing ```npm run dev``` followed by pressing the ```enter``` key.
+4.  After running the command, you’ll see a local and network URL (e.g., ```http://localhost:3000```). Open one of them in your browser to view the site.
+
+
+## 📱 Running on a Mobile Device (Optional)
+To view the site from your mobile device:
+1. Follow the steps in the “How to Run the Project” section above.
+2. Ensure the device running the development server and your mobile device are on the same Wi-Fi/network.
+3. On your mobile browser, enter the IP address and port shown in the terminal after running npm run dev.
     - Example: 
-        - Say our IP Address is 123.456.789.012
-        - Say the port is 3000 or 5500.
-        - We would type in 123.456.789.012:3000 or 123.456.789.012:5500.
+        - If your terminal shows the following:
 
-# What Files Do I Mainly Work on?
+                Local:   http://localhost:3000  
+                Network: http://123.456.789.012:3000
+        - Then type this into your phone's browser:
+                
+                123.456.789.012:3000
+⚠️ Note: If you are having difficulties with connecting, you may need to adjust some firewall and port settings.
+    
+
+# 📁 Key Files & Directories (Work in Progress)
 Below are a list of files and explanations of what they are.
 
 <pre lang="md">
-okstateacm.github.io
+OKStateACM.github.io
 |----📁Public (This folder has images stored in it.)
 |       |----📁officer contacts (This folder has images related to social contacts.)
 |       |----📁officers (This folder contains images of ACM@OkState board members.)
@@ -54,8 +87,12 @@ okstateacm.github.io
 |----📄next.config.mjs (This is a file that contains custom configuration settings for next.js.)
 </pre>
 
-# Some Useful Resources on Git
+# 📚 Some Useful Resources on Git
 * [Git Branching - Basic Branching and Merging][Git Branching Link]
 
-[Node.js Link]: https://nodejs.org/en
+[Node.js Download Link]: https://nodejs.org/en/download
+[Git Download Link]: https://git-scm.com/downloads
+[Connecting Git to GitHub]: https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git
+[Connecting Email to GitHub]: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address
+[How to clone a repo]: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 [Git Branching Link]: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
