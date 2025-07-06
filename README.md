@@ -22,7 +22,7 @@ This website is intended for prospective and current OSU students, alumni, and e
 At the time of writing, the setup instruction are targeted towards Windows 10, Windows 11, and the Ubuntu-based Linux distributons.
 
 
-## 📦 Pre-Requisites
+## 📦 Dependencies/Pre-Requisites
 ### Git and GitHub  
 This project will require you to use Git and GitHub. If you do not have Git installed: 
 1. Install Git for from the official [Git website][Git Download Link].

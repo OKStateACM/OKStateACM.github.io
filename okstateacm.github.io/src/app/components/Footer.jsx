@@ -17,13 +17,12 @@ export default function Footer() {
   return (
     <>
 
-      {/* Footer for mobile */}
       <footer className="bg-black border-t-4 border-orange-500 h-[250px] md:h-[500px] text-white">
           
         {/* ACM LOGO FOR FOOTER */}
         <div className="flex items-center h-full justify-evenly">
           <Image
-            className=""
+            className="w-24 h-24 sm:w-100 sm:h-100"
             src="/ACM at OKState Logo.png" //location of logo
             alt="Next.js logo" //alt text of file
             width={400}
