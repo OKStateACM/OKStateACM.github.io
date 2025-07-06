@@ -26,7 +26,7 @@ export default function Header() {
             ACM@OkState
           </div>
           
-          <div className="flex flex-col items-center gap-10 sm:flex-row pr-40">
+          <div className="flex flex-col items-center gap-10 pr-40 sm:flex-row">
             <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
               Home
             </a>
@@ -86,7 +86,9 @@ export default function Header() {
             <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/">Home</a>
             <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/officers">Officers</a>
             <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/calendar">Events</a>
-            <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/about">About Us</a>
+            <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/about">About</a>
+            <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/faq">FAQ</a>
+            <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/hackathons">Hackathons</a>
           </nav>
         </div>
 
