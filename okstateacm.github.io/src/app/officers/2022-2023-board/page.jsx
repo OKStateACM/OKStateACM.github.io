@@ -45,7 +45,7 @@ const officers = [
   { 
     officer_title: "Secretary", 
     officer_name: "Tate Armstrong", 
-    officer_headshot: "/officers/2023-2024 exec team/tate armstrong.jpg",
+    officer_headshot: "/images/officers/2023-2024 exec team/tate armstrong.jpg",
     officer_linkedin: "https://www.linkedin.com/in/tate-armstrong/",
     officer_email: "tate.armstrong@okstate.edu",
     officer_github: "https://github.com/TateArmstrong",

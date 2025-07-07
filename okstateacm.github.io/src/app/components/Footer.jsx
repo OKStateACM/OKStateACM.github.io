@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="flex items-center h-full justify-evenly">
           <Image
             className="w-24 h-24 sm:w-100 sm:h-100"
-            src="/ACM at OKState Logo.png" //location of logo
+            src="/images/logos/ACM at OKState Logo.png" //location of logo
             alt="Next.js logo" //alt text of file
             width={400}
             height={400}

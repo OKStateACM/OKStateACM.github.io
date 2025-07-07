@@ -22,7 +22,7 @@ export default function Accordion({title, answer}) {
     <>
         <div className="py-2">
             <button onClick={() => setAccordionOpen(!accordionOpen)} className="flex justify-between w-full">
-                <span className="flex-1 text-left text-md sm:text-xl">{title}.</span>
+                <span className="flex-1 text-left text-md sm:text-xl">{title}</span>
                 {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
                 
                 <svg

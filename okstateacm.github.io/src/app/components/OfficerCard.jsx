@@ -60,7 +60,7 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
                     >
                         <Image
                             aria-hidden
-                            src="/officer contacts/rounded/linkedin.png" 
+                            src="/images/officers/officer contacts/rounded/linkedin.png" 
                             alt="LinkedIn icon"
                             width={50}
                             height={50}
@@ -78,7 +78,7 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
                     >
                         <Image
                             aria-hidden
-                            src="/officer contacts/rounded/email.png"
+                            src="/images/officers/officer contacts/rounded/email.png"
                             alt="Email icon"
                             width={50}
                             height={50}
@@ -96,7 +96,7 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
                     >
                         <Image
                             aria-hidden
-                            src="/officer contacts/rounded/github.png"
+                            src="/images/officers/officer contacts/rounded/github.png"
                             alt="GitHub icon"
                             width={50}
                             height={50}
@@ -114,7 +114,7 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
                     >
                         <Image
                             aria-hidden
-                            src="/officer contacts/rounded/website.png"
+                            src="/images/officers/officer contacts/rounded/website.png"
                             alt="Website icon"
                             width={50}
                             height={50}

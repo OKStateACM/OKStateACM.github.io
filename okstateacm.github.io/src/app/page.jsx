@@ -110,7 +110,7 @@ export default function Home() { //This is a functional component. It's called H
             - Looking into "responsive web design with Tailwind CSS" might help you understand how breakpoints and utilities work together.
               You can read about responsive web designs outside of Tailwind CSS too.
         */}
-          <div className="relative top-image-container h-56 sm:h-80 md:h-100 bg-[url('/mscs.png')] bg-cover bg-center">
+          <div className="relative top-image-container h-56 sm:h-80 md:h-100 bg-[url('/images/backgrounds/mscs.png')] bg-cover bg-center">
             {/* Centers and adds backdrop */}
             <div className="absolute inset-0 flex items-center justify-center w-full h-full backdrop-blur-xs saturate-150">
               {/* Adds title  */}
@@ -124,7 +124,7 @@ export default function Home() { //This is a functional component. It's called H
           <div className="relative z-10 flex justify-center -mt-12 sm:-mt-16 md:-mt-24">
             <Image
               className="object-contain bg-white rounded-full drop-shadow-lg drop-shadow-orange-400 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44"
-              src="/ACM at OKState Logo.png" //location of logo
+              src="/images/logos/ACM at OKState Logo.png" //location of logo
               alt="Next.js logo" //alt text of file
               width={180}
               height={180}
@@ -283,7 +283,7 @@ export default function Home() { //This is a functional component. It's called H
                         Grow
                       </i>
                       {/* border-x-10 annd border-black are used to constrain the boundaries of the text! */}
-                      <p className="px-10 text-lg text-center text-white sm:text-2xl border-x-100 border-black">
+                      <p className="px-10 text-lg text-center text-white sm:text-2xl mx-25 max-w-3xl">
                         Whether you are an undergraduate, graduate, faculty, or a professional, 
                         the ACM is here to help you grow. Coding experience is not a requirement
                         to join and we highly encourage you to join us! Participate in workshops,

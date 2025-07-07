@@ -62,7 +62,7 @@ const officers = [
   { 
     officer_title: "Treasurer", 
     officer_name: "Ethan Franks", 
-    officer_headshot: "/officers/2025-2026 exec team/ethan franks.png",
+    officer_headshot: "/images/officers/2025-2026 exec team/ethan franks.png",
     officer_linkedin: "https://www.linkedin.com/in/ethan-franks-377634272/",
     officer_email: "ethan.franks@okstate.edu",
     officer_github: "",

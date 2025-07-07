@@ -15,7 +15,7 @@ const officers = [
   { 
     officer_title: "President", 
     officer_name: "Justin Moua",
-    officer_headshot: "/officers/2024-2025 exec team/justin moua.jpg",
+    officer_headshot: "/images/officers/2024-2025 exec team/justin moua.jpg",
     officer_linkedin: "https://www.linkedin.com/in/justin-moua/",
     officer_email: "hmuas11037@gmail.com",
     officer_github: "https://github.com/JustinMoua",
@@ -35,7 +35,7 @@ const officers = [
   { 
     officer_title: "Treasurer", 
     officer_name: "Ethan Franks", 
-    officer_headshot: "/officers/2025-2026 exec team/ethan franks.png",
+    officer_headshot: "/images/officers/2025-2026 exec team/ethan franks.png",
     officer_linkedin: "https://www.linkedin.com/in/ethan-franks-377634272/",
     officer_email: "ethan.franks@okstate.edu",
     officer_github: "",
