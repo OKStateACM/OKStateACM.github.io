@@ -30,7 +30,7 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
                 <div className="absolute inset-0 rotate-45 rounded-[20%] overflow-hidden shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] bg-white">
                     {/* Rotates image (since the shape -45deg was rotated 45deg) and zooms in on image*/}
                     <Image
-                        src={officer_headshot || "/officers/silhouette.png"}
+                        src={officer_headshot || "/images/officers/silhouette.png"}
                         alt="Next.js logo"
                         width={200}
                         height={200}
