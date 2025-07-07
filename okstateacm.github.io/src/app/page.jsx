@@ -282,16 +282,12 @@ export default function Home() { //This is a functional component. It's called H
                       <i className="flex justify-center py-5 font-bold text-white sm:py-25 text-8xl">
                         Grow
                       </i>
-                      <p className="px-10 text-lg text-center text-white sm:text-2xl">
-                      Whether you are an undergraduate, graduate, faculty, or a professional,
-                      <br />
-                      the ACM is here to help you grow. Coding experience is not a requirement
-                      <br />
-                      to join and we highly encourage you to join us! Participate in workshops,
-                      <br />
-                      competitions, company networking events, projects, game nights, 
-                      <br />
-                      and more!
+                      {/* border-x-10 annd border-black are used to constrain the boundaries of the text! */}
+                      <p className="px-10 text-lg text-center text-white sm:text-2xl border-x-100 border-black">
+                        Whether you are an undergraduate, graduate, faculty, or a professional, 
+                        the ACM is here to help you grow. Coding experience is not a requirement
+                        to join and we highly encourage you to join us! Participate in workshops,
+                        competitions, company networking events, projects, game nights, and more!
                       </p>
                     </div>
                   </div>
@@ -319,19 +315,16 @@ export default function Home() { //This is a functional component. It's called H
                   {/* grid */}
                   <div className="grid grid-cols-[1fr_auto]">
                     {/* Positions the "Connect" a title lower. */}
-                    <div className="py-25">
+                    <div className="py-15">
                       {/* Title */}
                       <i className="flex font-bold text-white justify-center-safe text-8xl">
                         Connect
                       </i>
                       {/* Description */}
-                      <p className="px-10 py-5 text-center text-white sm:py-25 ">
+                      <p className="px-10 py-25 text-lg text-center text-white sm:text-2xl border-x-100 border-black">
                         Come surround yourself with like-minded individuals who share your
-                        <br />
                         passion for computer science and technology. Discover new friendships, 
-                        <br />
                         collaborations, and opportunities to connect with fellow students,
-                        <br />
                         faculty, and industry professionals.
                       </p>
                     </div>
@@ -370,6 +363,7 @@ export default function Home() { //This is a functional component. It's called H
                 {/* grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-25">
                   {/* IMAGE FRAME FOR DESKTOP */}
+                  <div className="flex justify-end">
                   <Image 
                     className="hidden sm:block sm:object-cover sm:object-center sm:bg-white sm:border-4 sm:border-orange-500 sm:drop-shadow-xl sm:drop-shadow-black sm:w-165 sm:h-165 sm:rounded-4xl"
                     src="/images/homepage-images/acm-impact-2.jpg"
@@ -378,17 +372,15 @@ export default function Home() { //This is a functional component. It's called H
                     height={500}
                     priority
                   />
+                  </div>
                   <div>
                     <i className="flex justify-center py-5 font-bold text-white sm:py-25 text-8xl">
                       Impact
                     </i>
-                    <p className="px-10 text-center text-white">
+                    <p className="px-10 text-lg text-center text-white sm:text-2xl border-x-100 border-black">
                       Join us to make an difference in the world of Computer Science. Whether it's
-                      <br/>
                       through community outreach, mentorship, programs, organizing competitions,
-                      <br/>
                       contributing to projects, or simply sharing your knowledge, you'll make a
-                      <br/>
                       positive impact on the community and beyond.
                     </p>
                   </div>
@@ -420,15 +412,11 @@ export default function Home() { //This is a functional component. It's called H
                     <i className="flex justify-center py-5 font-bold text-white sm:py-25 text-8xl">
                       Have Fun
                     </i>
-                    <p className="px-10 text-center text-white">
+                    <p className="px-10 text-lg text-center text-white sm:text-2xl border-x-100 border-black">
                       The ACM is not just about work; it's about having fun too! Join us for game 
-                      <br/>
                       nights, social events, team-building activities, food, and beverages. Meet
-                      <br/>
                       new friends, relax after a long day of classes, or study together before
-                      <br/>
                       that big exam! ACM is a place where you can enjoy your time while
-                      <br/>
                       pursuing your passion for computer science.
                     </p>
                   </div>
