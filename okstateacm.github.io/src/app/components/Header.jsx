@@ -23,7 +23,9 @@ export default function Header() {
       <header className="hidden py-5 bg-white border-b-4 border-orange-500 md:block">
         <div className="flex items-center justify-between w-full text-gray-500">
           <div className="text-3xl pl-50 gap-15">
-            ACM@OkState
+            <a className="rounded-sm px-2 [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
+              ACM@OKState {/* This is also clickable. It takes the user home. */}
+            </a>
           </div>
           
           <div className="flex flex-col items-center gap-10 pr-40 sm:flex-row">
@@ -53,7 +55,11 @@ export default function Header() {
       {/* Header for mobile with block on small screen. Anything greater than md has this hidden.*/}
       <header className="block py-5 bg-white border-b-4 border-orange-500 md:hidden">
         <div className="flex items-center justify-between w-full text-gray-500">
-          <div className="pl-6 text-2xl">ACM@OkState</div>
+          <div className="pl-6 text-2xl">
+            <a className="hover:bg-orange-100" href="/">
+              ACM@OkState {/* This is also clickable. It takes the user home. */}
+            </a>
+          </div>
           {/* Hamburger dropdown menu*/}
           <div>
             <button

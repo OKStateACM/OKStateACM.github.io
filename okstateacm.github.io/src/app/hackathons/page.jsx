@@ -33,12 +33,10 @@ export default function Hackathons() {
           {/* This div is used to make a grid with 1 column. */}
           <div className="grid grid-cols-1 gap-40">
             {/* ROW 1 */}
-            <div className="text-lg text-black text-center mx-auto max-w-3xl">
-              At Oklahoma State University, the ACM takes pride in providing opportunities for others to grow.
-              Competitions are a great way to fine-tune these skills, network with professionals or prospective
-              employees, and showcase what you got! Placeholder Text Placeholder Text Placeholder Text 
-              Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder 
-              Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text 
+            <div className="text-lg text-black text-center mx-auto max-w-2xl">
+              At Oklahoma State University, the ACM provides opportunities for others to grow.
+              Competitions are a great way to fine-tune skills, network with peers, professionals or prospective
+              employees, and showcase what you got! 
             </div>
 
             {/* ROW 2 */}
@@ -58,8 +56,9 @@ export default function Hackathons() {
                   <div className="text-center text-4xl">
                     ACM Hackathons
                   </div>
-                  <div className="text-center mx-auto max-w-2xl">
-                    DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE 
+                  <div className="text-center mx-auto text-xl max-w-md">
+                    The ACM Appathon is OSU’s Computer Science’s 
+                    annual Spring hackathon—a 48 hour software focused marathon.
                   </div>
                   <a 
                     className="flex justify-center py-1 p-5 text-xl text-white sm:py-2 sm:text-4xl rounded-xl bg-orange-600/100 hover:bg-orange-800/100" 
@@ -84,8 +83,8 @@ export default function Hackathons() {
                   <div className="text-center text-4xl">
                     Hack OKState
                   </div>
-                  <div className="text-center mx-auto max-w-2xl">
-                    DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE DESCRIPTION HERE 
+                  <div className="text-center mx-auto text-xl max-w-md">
+                    Check out our sister Hackathon: Hack OKState! It is OSU’s official collegiate hackathon—an annual 24 hour technology innovation marathon.
                   </div>
                   <a 
                     className="flex justify-center py-1 p-5 text-xl text-white sm:py-2 sm:text-4xl rounded-xl bg-orange-600/100 hover:bg-orange-800/100" 

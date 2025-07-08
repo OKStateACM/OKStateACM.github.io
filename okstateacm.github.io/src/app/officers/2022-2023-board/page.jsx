@@ -15,8 +15,8 @@ const officers = [
   { 
     officer_title: "President", 
     officer_name: "Gwyn Hubbard", 
-    officer_headshot: "",
-    officer_linkedin: "",
+    officer_headshot: "/images/officers/2022-2023 exec team/gwyn hubbard.png",
+    officer_linkedin: "https://www.linkedin.com/in/gwyn-hubbard-1847b122b/",
     officer_email: "",
     officer_github: "",
     officer_website: ""

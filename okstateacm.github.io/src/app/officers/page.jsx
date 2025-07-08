@@ -72,7 +72,7 @@ const officers = [
   { 
     officer_title: "Secretary", 
     officer_name: "Jack Weinheimer", 
-    officer_headshot: "",
+    officer_headshot: "/images/officers/2025-2026 exec team/jack weinheimer.png",
     officer_linkedin: "https://www.linkedin.com/in/jack-weinheimer-96469518a/",
     officer_email: "jaweinh@okstate.edu",
     officer_github: "",

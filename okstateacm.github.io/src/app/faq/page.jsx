@@ -29,7 +29,7 @@ export default function Faq() {
       {/* <div className="flex justify-center items-center grid grid-cols-1 border border-black">
       </div> */}
 
-        <div className="p-4 bg-gray-200 rounded-lg">
+        <div className="p-4 bg-gray-200 rounded-lg shadow-lg">
           <Accordion 
             title='How do I contact the ACM chapter at Oklahoma State University?' 
             answer={

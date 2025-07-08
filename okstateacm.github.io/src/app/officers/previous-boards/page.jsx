@@ -20,10 +20,10 @@ export default function PreviousBoards() {
             Former Executive Boards
           </div>
           <div className="grid grid-rows-4 text-black gap-y-3 md:gap-y-6">
-            <a href="/officers">2025-2026 Executive Board</a>
-            <a href="/officers/2024-2025-board">2024-2025 Executive Board</a>
-            <a href="/officers/2023-2024-board">2023-2024 Executive Board</a>
-            <a href="/officers/2022-2023-board">2022-2023 Executive Board</a>
+            <a className="hover:bg-orange-300 rounded-sm p-1 "href="/officers">2025-2026 Executive Board</a>
+            <a className="hover:bg-orange-300 rounded-sm p-1 "href="/officers/2024-2025-board">2024-2025 Executive Board</a>
+            <a className="hover:bg-orange-300 rounded-sm p-1 "href="/officers/2023-2024-board">2023-2024 Executive Board</a>
+            <a className="hover:bg-orange-300 rounded-sm p-1 "href="/officers/2022-2023-board">2022-2023 Executive Board</a>
           </div>
         </div>
       </main>

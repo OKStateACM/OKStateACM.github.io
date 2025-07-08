@@ -25,9 +25,9 @@ const officers = [
   { 
     officer_title: "Vice President", 
     officer_name: "Ashton Cecil",
-    officer_headshot: "",
+    officer_headshot: "/images/officers/2024-2025 exec team/ashton cecil.png",
     officer_linkedin: "https://www.linkedin.com/in/ashton-cecil-a3155b235/",
-    officer_email: "",
+    officer_email: "ashtoncec@gmail.com",
     officer_github: "https://github.com/ashtoncec",
     officer_website: ""
   },
@@ -55,9 +55,9 @@ const officers = [
   { 
     officer_title: "OSU Tulsa & Online Liaison", 
     officer_name: "Ryeleigh Avila",
-    officer_headshot: "",
+    officer_headshot: "/images/officers/2024-2025 exec team/ryeleigh avila.png",
     officer_linkedin: "https://www.linkedin.com/in/avila03/",
-    officer_email: "",
+    officer_email: "ryeleigh.avila@okstate.edu",
     officer_github: "https://github.com/RyeleighAvila",
     officer_website: ""
   },
