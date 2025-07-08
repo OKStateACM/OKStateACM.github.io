@@ -52,7 +52,7 @@ const officers = [
   { 
     officer_title: "Vice President", 
     officer_name: "Savannah Hamblin", 
-    officer_headshot: "",
+    officer_headshot: "/images/officers/2025-2026 exec team/savannah hamblin.png",
     officer_linkedin: "https://www.linkedin.com/in/savannah-hamblin-70927b237/",
     officer_email: "savannah.hamblin@okstate.edu",
     officer_github: "",

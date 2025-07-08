@@ -102,7 +102,7 @@ export default function Officers2024to2025() {
           <div className="py-4 text-2xl text-center text-black">
             ACM Executive Board
             <br />
-            (2025-2026)
+            (2023-2024)
           </div>
           {/* Button centered below title */}
           <div className="flex justify-center">

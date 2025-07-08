@@ -35,7 +35,7 @@ const officers = [
   { 
     officer_title: "Treasurer", 
     officer_name: "Ethan Franks", 
-    officer_headshot: "/images/officers/2025-2026 exec team/ethan franks.png",
+    officer_headshot: "/images/officers/2024-2025 exec team/ethan franks.png",
     officer_linkedin: "https://www.linkedin.com/in/ethan-franks-377634272/",
     officer_email: "ethan.franks@okstate.edu",
     officer_github: "",
@@ -45,7 +45,7 @@ const officers = [
   { 
     officer_title: "Secretary", 
     officer_name: "Savannah Hamblin", 
-    officer_headshot: "",
+    officer_headshot: "/images/officers/2024-2025 exec team/savannah hamblin.png",
     officer_linkedin: "https://www.linkedin.com/in/savannah-hamblin-70927b237/",
     officer_email: "savannah.hamblin@okstate.edu",
     officer_github: "",
@@ -113,7 +113,7 @@ export default function Officers2024to2025() {
           <div className="py-4 text-2xl text-center text-black">
             ACM Executive Board
             <br />
-            (2025-2026)
+            (2024-2025)
           </div>
           {/* Button centered below title */}
           <div className="flex justify-center">

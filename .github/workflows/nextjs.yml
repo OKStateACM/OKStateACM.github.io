@@ -2,6 +2,7 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
+# Tutorial Followed: https://youtu.be/mJuz45RXeXY?si=NC-_5bMozCXveC5L
 name: Deploy Next.js site to Pages
 
 on:
