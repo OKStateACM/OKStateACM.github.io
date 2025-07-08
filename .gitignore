@@ -17,4 +17,3 @@ yarn-debug.log*
 /coverage/
 # Ignore MacOS system files
 .DS_Store
-okstateacm.github.io/*
