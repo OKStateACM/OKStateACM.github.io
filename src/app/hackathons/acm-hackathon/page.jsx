@@ -4,6 +4,7 @@ AUTHOR(S): Justin Moua
 =====
 Notes
 =====
+  - Placeholder Text
 
 =========
 Resources
@@ -11,10 +12,10 @@ Resources
   - Placeholder Text
 */
 import Header from "../../components/Header"; // This is a custom component created located in ./components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page. It is similar to creating a function that you call in your code
-import Footer from "../../components/Footer";
-import UnderConstruction from "../../components/UnderConstruction"; // This is a custom component created located in ./components/UnderConstruction.jsx. This is so we don't have to copy and paste the code for the under construction page in every page. It is similar to creating a function that you call in your code
-import Image from "next/image";
-// This is called from page.js from src\app.
+import Footer from "../../components/Footer"; // This is another custom component.
+import Image from "next/image"; // Used to display images in Next.js. This is a built-in component that optimizes images for better performance.
+
+// This is called from page.js from src\app\hackathons\page.jsx.
 export default function AcmHackathon() {
   return (
     <div className="flex flex-col min-h-screen">

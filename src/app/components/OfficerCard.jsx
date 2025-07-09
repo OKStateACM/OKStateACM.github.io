@@ -4,18 +4,23 @@ AUTHOR(S): Justin Moua
 =====
 Notes
 =====
+    - This component is used to create an officer card that can be used in the Officers page.
+      It displays the officer's name, title, headshot, and social media links.
+      Code has been created to account for parameters that are not passed. 
+      You'll want to call this component in the Officers page and pass the parameters to it.
 
 =========
 Resources
 =========
-
+    - Placeholder text
 */
 import Image from "next/image";
 
 export default function OfficerCard({ officer_title, officer_name, officer_headshot, officer_linkedin, officer_email, officer_github, officer_website}) {
     return (
-        // for centering
+        // Centers the officer card and makes it a flex column
         <div className="flex flex-col items-center justify-center ">
+
             {/* Officer's Title */}
             <div className="text-center">
                 {officer_title}
@@ -25,10 +30,14 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
             <br />
             <br />
             
+            {/* Officer's Headshot */}
             <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44">
                 {/* rotates the shape and adds orange glow */}
                 <div className="absolute inset-0 rotate-45 rounded-[20%] overflow-hidden shadow-[0_0_20px_8px_rgba(255,165,0,0.6)] bg-white">
-                    {/* Rotates image (since the shape -45deg was rotated 45deg) and zooms in on image*/}
+                    {/* 
+                        Rotates image (since the shape -45deg was rotated 45deg) and zooms in on image
+                        Officer's headshot gets passed here. If none is provided, it defaults to a silhouette image.
+                    */}
                     <Image
                         src={officer_headshot || "/images/officers/silhouette.png"}
                         alt="Next.js logo"

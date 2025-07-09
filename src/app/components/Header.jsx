@@ -4,17 +4,17 @@ AUTHOR(S): Justin Moua
 =====
 Notes
 =====
-
+  - Placeholder text
 =========
 Resources
 =========
-
+  - Placeholder text
 */
 "use client";
-
-import { useState } from "react";
+import { useState } from "react"; // Refer to https://www.geeksforgeeks.org/reactjs/what-is-usestate-in-react/ for more information on use states.
 
 export default function Header() {
+  // This is called a "use state" that controls the accordion open/close state. 
   const [menuOpen, setMenuOpen] = useState(false);
   
   return (
@@ -60,6 +60,7 @@ export default function Header() {
               ACM@OkState {/* This is also clickable. It takes the user home. */}
             </a>
           </div>
+
           {/* Hamburger dropdown menu*/}
           <div>
             <button
@@ -74,6 +75,7 @@ export default function Header() {
             </button>
           </div>
         </div>
+        
         {/* Dropdown Menu */}
         <div className="text-stone-700">
           <nav

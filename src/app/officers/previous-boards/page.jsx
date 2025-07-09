@@ -2,13 +2,13 @@
 AUTHOR(S): Justin Moua
 
 Notes:
-  -   - Placeholder Text
+  - Placeholder Text
 Resources:
   - Placeholder Text
 */
-import Header from "../../components/Header";  // This is a custom component created located in ../components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page.
+import Header from "../../components/Header";  // This is a custom component created located in ../../components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page.
 import Footer from "../../components/Footer";
-// This is called from page.js from src\app.
+// This is called from page.js from src\app\officers\page.jsx.
 export default function PreviousBoards() {
   return (
     <div className="flex flex-col min-h-screen">

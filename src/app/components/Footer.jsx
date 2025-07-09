@@ -4,11 +4,11 @@ AUTHOR(S): Justin Moua
 =====
 Notes
 =====
-
+  - Placeholder text
 =========
 Resources
 =========
-
+  - Placeholder text
 */
 import Image from "next/image";
 

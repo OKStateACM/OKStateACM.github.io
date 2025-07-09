@@ -1,15 +1,6 @@
 /*
 AUTHOR(S): Justin Moua
 
-=========
-IMPORTANT
-=========
-  - 6/25/2025 (Justin Moua) Note to self: This "important" section will probably be in the readme.
-  - This specific file serves as the page for "current" officers/executive board.
-    When your term is over, please create a folder with the name of "x-y-board" where
-    x and y are the corresponding academic years of your team. Afterwards, create a "page.jsx"
-    inside of that file. Then, copy this entire code into that file.  
-
 =====
 Notes
 =====

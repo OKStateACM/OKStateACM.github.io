@@ -1,24 +1,31 @@
 /*
 AUTHOR(S): Justin Moua
 
+=========
+IMPORTANT
+=========
+  - The Accordion component is used to display questiona and its answers.
+    It takes in a title and an answer as props. (Think of it as a function that takes in parameters.)
+
 =====
 Notes
 =====
   - This page conists of frequently asked questions (FAQ) about the ACM chapter at Oklahoma State University.
     It uses the following YouTube tutorial as a reference for creating the Accordion component.
       - https://youtu.be/oOXExNA8A48?si=N6MM4L4VjxiIC2sE
+
+      
 =========
 Resources
 =========
   - Placeholder Text
 */
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Accordion from "../components/Accordion";
+import Header from "../components/Header"; // This is a custom reusable component located in ./components/Header.jsx.
+import Footer from "../components/Footer"; // This is a custom reusable component.
+import Accordion from "../components/Accordion"; // This is a custom  reusable component.
 
-
+// This is called from page.js from src\app.
 export default function Faq() {
-
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -26,15 +33,17 @@ export default function Faq() {
         Frequently Asked Questions
       </div>
       <main className="flex flex-col text-black justify-center flex-1 p-8">
-      {/* <div className="flex justify-center items-center grid grid-cols-1 border border-black">
-      </div> */}
-
+        {/* This is what renders the interactable FAQ. Particularly, the Accordion is what does so. */}
         <div className="p-4 bg-gray-200 rounded-lg shadow-lg">
+          {/* This Accordion component is an example of how you can include a hyperlink in the answer. */}
           <Accordion 
             title='How do I contact the ACM chapter at Oklahoma State University?' 
             answer={
               <>
+                {/* This is plain text */}
                 You can contact us at {' '}
+                
+                {/* This is a hyperlink that is in the answer */}
                 <a
                   href="mailto:acm.cs@okstate.edu"
                   target="_blank"
@@ -43,7 +52,11 @@ export default function Faq() {
                 >
                   acm.cs@okstate.edu
                 </a>
+
+                {/* This is plain text */}
                 {' '} or through our Discord server that can be found on our {''}
+
+                {/* This is a hyperlink that is in the answer */}
                 <a
                   href="https://linktr.ee/okstate.acm"
                   target="_blank"
@@ -55,10 +68,13 @@ export default function Faq() {
               </>
             }
           />
+
           <Accordion 
             title='Do I need to be a Computer Science major to join and participate in events?' 
             answer='No. Although our participants primarily consist of Computer Science majors, any major is welcome!'
           />
+
+          {/* This Accordion component is an example of how you can include a hyperlink in the answer. */}
           <Accordion 
             title="How can I join, participate, or stay updated on ACM events?" 
             answer={

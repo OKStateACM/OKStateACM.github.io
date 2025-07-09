@@ -4,6 +4,8 @@ AUTHOR(S): Justin Moua
 =====
 Notes
 =====
+    - This component is used to display a message indicating that the page is under construction.
+      It can also display additional text if provided through the `extraText` prop.
 
 =========
 Resources

@@ -22,13 +22,13 @@ Resources
   - Placeholder Text
 */
 import Header from "../components/Header"; // This is a custom component created located in ./components/Header.jsx. This is so we don't have to copy and paste the code for the header in every page. It is similar to creating a function that you call in your code
-import Footer from "../components/Footer";
-import UnderConstruction from "../components/UnderConstruction";
+import Footer from "../components/Footer"; // This is another custom component.
+import UnderConstruction from "../components/UnderConstruction"; // This is another custom component used when a page is under construction. It is located in ./components/UnderConstruction.jsx. This is so we don't have to copy and paste the code for the under construction page in every page.
+
 // This is called from page.js from src\app.
 export default function Calendar() {
   // Calendar link goes here. Otherwise, page displays a "under construction" if left empty.
   const calendarSrc = "";
-  // Empty example: const calendarSrc = "";
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -41,10 +41,12 @@ export default function Calendar() {
         {/* Use an iframe to show the shared calendar. If no link, show under construction message. */}
 
         {/* 
-          ============
-          REPLACE ME!!
-          ============
-          THIS CODE HAS BEEN COMMENTED OUT BECAUSE IT IS CURRENTLY LINKED TO JUSTIN'S OUTLOOK CALENDAR. - Justin Moua (7/7/2025)
+          ==========
+          RIMPORTANT
+          ==========
+          CODE BELOW HAS BEEN COMMENTED OUT BECAUSE IT IS CURRENTLY LINKED TO JUSTIN'S OUTLOOK CALENDAR. 
+          PLEASE LINK IT TO THE ACM EVENTS CALENDAR. A CALENDAR MAY NEED TO BE CREATED IF IT DOES NOT EXIST YET. 
+          FEEL FREE TO REVAMP THIS PAGE IF NEEDED. - Justin Moua (7/7/2025)
          */}
         {/*calendarSrc ? (
           <iframe

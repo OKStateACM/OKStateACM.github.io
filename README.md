@@ -155,6 +155,10 @@ This project was deployed to Github.io by going to the settings of this reposito
 * [Static vs Dynamic websites][Static vs Dynamic]
 * [How to test a local website on your phone][Testing on phone]
 * [What is Tailwind?][What is tailwind]
+* [What is a React use state (via React)?][Use states react.dev]
+* [What is a React use state (via Geeks4Geeks)?][Use states geeks4geeks]
+* [What are React components?][React components]
+* [What are React props?][React props]
 
 [Node.js Download Link]: https://nodejs.org/en/download
 [Git Download Link]: https://git-scm.com/downloads
@@ -167,3 +171,7 @@ This project was deployed to Github.io by going to the settings of this reposito
 [Git Branching Link]: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 [Testing on phone]: https://youtu.be/uRYHX4EwYYA?si=tfUiiabqzuqVflxs
 [What is tailwind]: https://tailwindcss.com/docs/styling-with-utility-classes
+[Use states react.dev]: https://react.dev/reference/react/useState
+[Use states geeks4geeks]: https://www.geeksforgeeks.org/reactjs/what-is-usestate-in-react/
+[React components]:https://www.geeksforgeeks.org/reactjs/reactjs-components/
+[React props]: https://www.w3schools.com/react/react_props.asp
