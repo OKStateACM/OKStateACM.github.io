@@ -1,1 +1,3 @@
-officers/page.jsx represents the current board members! 
+# About the officers folder
+
+This folder consists of pages that renders the current and former executive boards. The "page.jsx" at the top of the officers folder serves as the page for the current executive board. Former boards will need to have a folder created with their respective year. Don't forget to edit the "previous-boards" folder when adding a new former-executive board. "previous-boards" serves as a page to select different executive boards to view. 
