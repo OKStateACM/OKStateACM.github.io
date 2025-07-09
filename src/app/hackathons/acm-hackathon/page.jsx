@@ -60,7 +60,7 @@ export default function AcmHackathon() {
                 {/* column created to seperate image from the title.*/}
                 <div className="flex flex-col items-center gap-5">
                   <div className="text-center text-4xl">
-                    ACM Spring 2024 Appathon
+                    ACM Spring 2025 Appathon
                   </div>
                   <Image 
                     src="/images/hackathons/acm-hackathons/ACM_Appathon_Spring_2025.png"

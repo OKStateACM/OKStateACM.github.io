@@ -21,14 +21,14 @@ export default function Header() {
     <>
       {/*Header for desktops. This is hidden on smaller screens. Flex occurs on md and greater.*/}
       <header className="hidden py-5 bg-white border-b-4 border-orange-500 md:block">
-        <div className="flex items-center justify-between w-full text-gray-500">
+        <div className="flex items-center justify-between w-full text-stone-700">
           <div className="text-3xl pl-50 gap-15">
-            <a className="rounded-sm px-2 [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
+            <a className="rounded-sm px-15  [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
               ACM@OKState {/* This is also clickable. It takes the user home. */}
             </a>
           </div>
           
-          <div className="flex flex-col items-center gap-10 pr-40 sm:flex-row">
+          <div className="flex flex-col items-center gap-7 pr-40 sm:flex-row text-lg">
             <a className="rounded-sm py-2 px-6 underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
               Home
             </a>
@@ -54,7 +54,7 @@ export default function Header() {
 
       {/* Header for mobile with block on small screen. Anything greater than md has this hidden.*/}
       <header className="block py-5 bg-white border-b-4 border-orange-500 md:hidden">
-        <div className="flex items-center justify-between w-full text-gray-500">
+        <div className="flex items-center justify-between w-full text-stone-800">
           <div className="pl-6 text-2xl">
             <a className="hover:bg-orange-100" href="/">
               ACM@OkState {/* This is also clickable. It takes the user home. */}
@@ -75,7 +75,7 @@ export default function Header() {
           </div>
         </div>
         {/* Dropdown Menu */}
-        <div className="text-black">
+        <div className="text-stone-700">
           <nav
             className={`
               flex flex-col items-start gap-2 px-6 pt-4 pb-2 bg-white rounded-b shadow-md
@@ -92,7 +92,7 @@ export default function Header() {
             <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/">Home</a>
             <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/officers">Officers</a>
             <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/calendar">Events</a>
-            <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/about">About</a>
+            {/* <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/about">About</a> */}
             <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/faq">FAQ</a>
             <a className="w-full px-4 py-2 rounded underline underline-offset-4 [text-decoration-color:#f97316] hover:bg-orange-100" href="/hackathons">Hackathons</a>
           </nav>

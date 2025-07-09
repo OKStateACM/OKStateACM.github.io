@@ -54,10 +54,10 @@ export default function Hackathons() {
                     priority
                   />
                   <div className="text-center text-4xl">
-                    ACM Hackathons
+                    ACM Hackathon
                   </div>
                   <div className="text-center mx-auto text-xl max-w-md">
-                    The ACM Appathon is OSU’s Computer Science’s 
+                    The ACM's Hackathon is OSU’s Computer Science’s 
                     annual Spring hackathon—a 48 hour software focused marathon.
                   </div>
                   <a 
