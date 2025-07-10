@@ -125,7 +125,7 @@ export default function Home() { //This is a functional component. It's called H
             <Image
               className="object-contain bg-white rounded-full drop-shadow-lg drop-shadow-orange-400 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44"
               src="/images/logos/ACM at OKState Logo.png" //location of logo
-              alt="Next.js logo" //alt text of file
+              alt="Image of the ACM chapter's logo at" //alt text of file
               width={180}
               height={180}
               priority
@@ -167,7 +167,7 @@ export default function Home() { //This is a functional component. It's called H
                   <Image
                   className="w-20 h-20 sm:w-24 sm:h-24 md:w-36 md:h-36"
                     src="/images/homepage-images/students.png" //location of logo
-                    alt="Next.js logo" //alt text of file
+                    alt="An image that displays a graduation cap to visually show the user that the section used with this image is meant for students." //alt text of file
                     width={180}
                     height={180}
                     priority
@@ -191,7 +191,7 @@ export default function Home() { //This is a functional component. It's called H
                   <Image
                   className="w-20 h-20 sm:w-24 sm:h-24 md:w-36 md:h-36"
                     src="/images/homepage-images/hackathons.png"
-                    alt="Next.js logo"
+                    alt="An image that displays a trophy to visually show the user that the section used with this image is about hackathons."
                     width={180}
                     height={180}
                     priority
@@ -216,7 +216,7 @@ export default function Home() { //This is a functional component. It's called H
                     
                     className="w-20 h-20 sm:w-24 sm:h-24 md:w-36 md:h-36"
                     src="/images/homepage-images/employers.png" //location of logo
-                    alt="Next.js logo" //alt text of file
+                    alt="An image that displays a suitcase to visually show the user that the section used with this image is meant for employers." //alt text of file
                     width={180}
                     height={180}
                     priority
@@ -247,7 +247,7 @@ export default function Home() { //This is a functional component. It's called H
                       {/* Rotates image (since the shape -45deg was rotated 45deg) and zooms in on image*/}
                       <Image
                           src={"/images/homepage-images/iso-republic-colorful-programming-code.jpg"}
-                          alt="Next.js logo"
+                          alt="An image of a colorful programming code."
                           width={200}
                           height={200}
                           priority
@@ -268,7 +268,7 @@ export default function Home() { //This is a functional component. It's called H
                               {/* Rotates image (since the shape -45deg was rotated 45deg) and zooms in on image*/}
                               <Image
                                   src={"/images/homepage-images/iso-republic-colorful-programming-code.jpg"}
-                                  alt="Next.js logo"
+                                  alt="An image of a colorful programming code."
                                   width={500}
                                   height={500}
                                   priority
@@ -303,7 +303,7 @@ export default function Home() { //This is a functional component. It's called H
                 <Image 
                   className="object-cover object-center w-full h-full bg-white border-4 border-orange-500 drop-shadow-xl drop-shadow-black rounded-4xl"
                   src="/images/homepage-images/acm-nasa-suits-fall-2023.jpg"
-                  alt="Next.js logo"
+                  alt="An image of ACM members from Fall 2023 partaking in the NASA SUITS challenge."
                   width={500}
                   height={500}
                   priority
@@ -332,7 +332,7 @@ export default function Home() { //This is a functional component. It's called H
                     <Image 
                       className="hidden sm:block sm:object-cover sm:object-center sm:bg-white sm:border-4 sm:border-orange-500 sm:drop-shadow-xl sm:drop-shadow-black sm:w-250 sm:h-146 sm:rounded-4xl"
                       src="/images/homepage-images/acm-nasa-suits-fall-2023.jpg"
-                      alt="Next.js logo"
+                      alt="An image of ACM members from Fall 2023 partaking in the NASA SUITS challenge."
                       width={500}
                       height={500}
                       priority
@@ -351,7 +351,7 @@ export default function Home() { //This is a functional component. It's called H
               <Image 
                 className="object-cover object-center w-full h-full bg-white border-4 border-orange-500 drop-shadow-xl drop-shadow-black rounded-4xl"
                 src="/images/homepage-images/acm-impact-2.jpg"
-                alt="Next.js logo"
+                alt="An image of ACM members conveying members making an impact in the community."
                 width={500}
                 height={500}
                 priority
@@ -367,7 +367,7 @@ export default function Home() { //This is a functional component. It's called H
                   <Image 
                     className="hidden sm:block sm:object-cover sm:object-center sm:bg-white sm:border-4 sm:border-orange-500 sm:drop-shadow-xl sm:drop-shadow-black sm:w-165 sm:h-165 sm:rounded-4xl"
                     src="/images/homepage-images/acm-impact-2.jpg"
-                    alt="Next.js logo"
+                    alt="An image of ACM members conveying members making an impact in the community."
                     width={500}
                     height={500}
                     priority
@@ -397,7 +397,7 @@ export default function Home() { //This is a functional component. It's called H
               <Image 
                 className="object-cover object-center bg-white border-4 border-orange-500 rounded-full w-65 h-65 drop-shadow-xl drop-shadow-black"
                 src="/images/homepage-images/acm-have-fun-2.jpg"
-                alt="Next.js logo"
+                alt="An image of ACM members having fun at an event."
                 width={500}
                 height={500}
                 priority
@@ -424,7 +424,7 @@ export default function Home() { //This is a functional component. It's called H
                   <Image 
                     className="hidden sm:block sm:object-cover sm:object-center sm:bg-white sm:border-4 sm:border-orange-500 sm:drop-shadow-xl sm:drop-shadow-black sm:w-165 sm:h-165 sm:rounded-full"
                     src="/images/homepage-images/acm-have-fun-2.jpg"
-                    alt="Next.js logo"
+                    alt="An image of ACM members having fun at an event."
                     width={500}
                     height={500}
                     priority

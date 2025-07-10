@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <>
       {/*Header for desktops. This is hidden on smaller screens. Flex occurs on md and greater.*/}
-      <header className="hidden py-5 bg-white border-b-4 border-orange-500 md:block">
+      <header className="hidden py-5 bg-white border-b-4 border-orange-500 lg:block">
         <div className="flex items-center justify-between w-full text-gray-500">
           <div className="text-3xl pl-50 gap-15">
             <a className="rounded-sm px-2 [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
@@ -53,7 +53,7 @@ export default function Header() {
       </header>
 
       {/* Header for mobile with block on small screen. Anything greater than md has this hidden.*/}
-      <header className="block py-5 bg-white border-b-4 border-orange-500 md:hidden">
+      <header className="block py-5 bg-white border-b-4 border-orange-500 lg:hidden">
         <div className="flex items-center justify-between w-full text-gray-500">
           <div className="pl-6 text-2xl">
             <a className="hover:bg-orange-100" href="/">

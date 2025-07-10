@@ -24,7 +24,7 @@ export default function Footer() {
           <Image
             className="w-24 h-24 sm:w-100 sm:h-100"
             src="/images/logos/ACM at OKState Logo.png" //location of logo
-            alt="Next.js logo" //alt text of file
+            alt="The ACM at Oklahoma State University Logo" 
             width={400}
             height={400}
             priority
@@ -42,7 +42,7 @@ export default function Footer() {
                 className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/footer hyperlinks/hyperlink.png"
-                alt="Campus Link"
+                alt="The campus link logo"
                 width={50}
                 height={50}
               />
@@ -60,7 +60,7 @@ export default function Footer() {
                 className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/footer hyperlinks/instagram.png"
-                alt="Instagram"
+                alt="The Instagram logo"
                 width={50}
                 height={50}
               />
@@ -78,7 +78,7 @@ export default function Footer() {
                 className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/footer hyperlinks/linktree.png"
-                alt="Linktr.ee"
+                alt="The Linktr.ee logo"
                 width={50}
                 height={50}
               />
@@ -96,7 +96,7 @@ export default function Footer() {
                 className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/officer contacts/rounded/email.png"
-                alt="acm.cs@okstate.edu"
+                alt="The acm.cs@okstate.edu logo"
                 width={50}
                 height={50}
               />
@@ -113,7 +113,7 @@ export default function Footer() {
                 className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
                 src="/officer contacts/rounded/linkedin.png"
-                alt="Linked.In"
+                alt="The Linked.In logo"
                 width={50}
                 height={50}
               />
