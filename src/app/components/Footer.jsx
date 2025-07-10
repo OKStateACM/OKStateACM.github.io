@@ -95,7 +95,7 @@ export default function Footer() {
               <Image
                 className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
-                src="/officer contacts/rounded/email.png"
+                src="/images/officers/officer contacts/rounded/email.png"
                 alt="The acm.cs@okstate.edu logo"
                 width={50}
                 height={50}
@@ -112,7 +112,7 @@ export default function Footer() {
               <Image
                 className="p-1 bg-white rounded bg-opacity-70 w-8 h-8 md:w-[50px] md:h-[50px]"
                 aria-hidden
-                src="/officer contacts/rounded/linkedin.png"
+                src="/images/officers/officer contacts/rounded/linkedin.png"
                 alt="The Linked.In logo"
                 width={50}
                 height={50}
