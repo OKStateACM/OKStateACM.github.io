@@ -1,1 +1,0 @@
-This is a folder that contains any custom made images by the ACM@OkState board.
