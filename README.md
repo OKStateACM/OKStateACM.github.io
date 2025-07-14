@@ -138,7 +138,11 @@ OKStateACM.github.io
 |----📄next.config.mjs (This is a file that contains custom configuration settings for next.js.)
 </pre>
 
-# Deploying to Github.io/GitHub Pages
+<br/>
+<br/>
+<br/>
+
+# 🚀 Deploying to Github.io/GitHub Pages
 This project was deployed to Github.io by going to the settings of this repository, going to the "Code and automation" section and clicking on "Pages." The "Source" was set to "GitHub Actions" where a nextjs.yml file was suggested by Github to use. Deploying webapps will differ as time goes on given that the foundation of a webapp may change. 
 
 <br/>

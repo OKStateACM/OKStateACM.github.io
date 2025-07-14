@@ -40,7 +40,7 @@ export default function OfficerCard({ officer_title, officer_name, officer_heads
                     */}
                     <Image
                         src={officer_headshot || "/images/officers/silhouette.png"}
-                        alt="Next.js logo"
+                        alt={`Headshot of ${officer_name}` || "A silhouette of a person."}
                         width={200}
                         height={200}
                         priority

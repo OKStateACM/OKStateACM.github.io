@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ACM@OkState",
+  title: "ACM@OKState",
   description: "Oklahoma State University's Computer Science Community"
 };
 
