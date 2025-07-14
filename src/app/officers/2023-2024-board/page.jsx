@@ -54,12 +54,12 @@ const officers = [
     
   { 
     officer_title: "Advisor", 
-    officer_name: "Christopher Crick", 
-    officer_headshot: "",
-    officer_linkedin: "",
-    officer_email: "",
-    officer_github: "",
-    officer_website: ""
+    officer_name: "Dr. Crick (Cristopher Crick)", 
+    officer_headshot: "/images/officers/advisors/dr crick.png",
+    officer_linkedin: "https://www.linkedin.com/in/christopher-crick-344939237/",
+    officer_email: "chriscrick@cs.okstate.edu",
+    officer_github: "https://github.com/chriscrick",
+    officer_website: "cs.okstate.edu/~chriscrick"
   },
 ];
 

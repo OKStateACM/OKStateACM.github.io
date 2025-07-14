@@ -21,6 +21,7 @@ export default function Header() {
     <>
       {/*Header for desktops. This is hidden on smaller screens. Flex occurs on md and greater.*/}
       <header className="hidden py-5 bg-white border-b-4 border-orange-500 lg:block">
+
         <div className="flex items-center justify-between w-full text-stone-700">
           <div className="text-3xl pl-50 gap-15">
             <a className="rounded-sm px-15  [text-decoration-color:#f97316] hover:bg-orange-300" href="/">
